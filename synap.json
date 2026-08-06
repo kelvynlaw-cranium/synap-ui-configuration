@@ -1,12 +1,4 @@
 {
-    "actors": {
-        "HostCommandActor": {
-            "enable": true
-        },
-        "InvalidCommandActor": {
-            "enable": true
-        }
-    },
     "context": {
         "organization": {
             "name": "unity"
