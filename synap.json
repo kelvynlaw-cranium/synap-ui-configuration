@@ -11,8 +11,9 @@
     },
     "definitions": {
         "userDefinedDefinition": {
-            "filePath": "",
-            "file": "user_define_data.json"
+            "server": {
+                "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/user_define_data.json"
+            }
         }
     },
     "ui": {
@@ -27,8 +28,9 @@
         },
         "definitions": {
             "main": {
-                "filePath": "",
-                "file": "login.json"
+                "server": {
+                    "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/login.json"
+                }
             }
         }
     }
