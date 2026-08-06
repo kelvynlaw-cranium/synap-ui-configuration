@@ -1,0 +1,2461 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "storyboards": {
+    "main": {
+      "title": "Main storyboard",
+      "description": "Storyboard to present upon loaded",
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#FFFFFF",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "mainCon": {
+                    "type": "stack",
+                    "style": {
+                      "color": "#FFFFFF",
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "synapLogo": {
+                        "type": "image",
+                        "data": {
+                          "sources": {
+                            "localImagePath.synaps_logo": {
+                              "type": "string",
+                              "constantValue": "synaps_dark"
+                            }
+                          }
+                        },
+                        "style": {
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 62
+                            }
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 127
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 30
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "welcomeBackLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 15
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Heading/H1",
+                            "font": {
+                              "*": {
+                                "size": 22,
+                                "weight": "semiBold"
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.welcomeBackLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "signInMessageLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 10
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Body/Medium/Regular",
+                            "font": {
+                              "*": {
+                                "size": 13
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.signInToSystemAdminLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "userNameField": {
+                        "type": "textField",
+                        "data": {
+                          "sources": {
+                            "$global.user.name": {
+                              "type": "string",
+                              "constantValue": "unityalliancedemo"
+                            }
+                          }
+                        },
+                        "style": {
+                          "color": "#ff0000",
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 32
+                            }
+                          },
+                          "text": {
+                            "font": {
+                              "*": {
+                                "size": 12,
+                                "weight": "regular"
+                              }
+                            }
+                          },
+                          "border": {
+                            "line": "solid",
+                            "width": {
+                              "*": 1
+                            },
+                            "color": "#DBDBDC",
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "placeholder": {
+                          "sources": {
+                            "$userDefined.userNameFieldPlaceholder": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "continueBtn": {
+                        "type": "button",
+                        "style": {
+                          "color": "#619FCB",
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 40
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 32,
+                              "left": 20,
+                              "right": 20
+                            }
+                          },
+                          "border": {
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "btnSignUpOnClick": {
+                                "action": "nextScreen",
+                                "parameters": {
+                                  "screenName": "password"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "btnLoginLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.continue": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#FFFFFF",
+                              "margin": {
+                                "*": {
+                                  "left": 10,
+                                  "right": 10
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Large/Semibold",
+                                "font": {
+                                  "*": {
+                                    "size": 14,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "copyrightLabel": {
+                    "type": "label",
+                    "style": {
+                      "color": "#6D7172",
+                      "alignment": {
+                        "horizontal": "center"
+                      },
+                      "size": {
+                        "height": {
+                          "type": "match-content"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      },
+                      "text": {
+                        "name": "Mobile/Micro/Metrics",
+                        "font": {
+                          "*": {
+                            "size": 8
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.copyrightLabel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": true,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        },
+        "password": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#FFFFFF",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "mainCon": {
+                    "type": "stack",
+                    "style": {
+                      "color": "#FFFFFF",
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "backBtn": {
+                        "type": "button",
+                        "style": {
+                          "alignment": {
+                            "vertical": "middle"
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 43
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 46
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "leftArrow": {
+                            "type": "image",
+                            "data": {
+                              "sources": {
+                                "localImagePath.arrow_left": {
+                                  "type": "string",
+                                  "constantValue": "left_arrow"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fixed",
+                                  "value": {
+                                    "*": 17
+                                  }
+                                },
+                                "height": {
+                                  "type": "fixed",
+                                  "value": {
+                                    "*": 22
+                                  }
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "synapLogo": {
+                        "type": "image",
+                        "data": {
+                          "sources": {
+                            "localImagePath.synaps_logo": {
+                              "type": "string",
+                              "constantValue": "synaps_dark"
+                            }
+                          }
+                        },
+                        "style": {
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 16
+                            }
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 127
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 30
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "welcomeBackLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 15
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Heading/H1",
+                            "font": {
+                              "*": {
+                                "size": 22,
+                                "weight": "semiBold"
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.welcomeBackLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "signInMessageStack": {
+                        "type": "stack",
+                        "orientation": "horizontal",
+                        "style": {
+                          "size": {
+                            "width": {
+                              "type": "fill-parent"
+                            },
+                            "height": {
+                              "type": "match-content"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 10
+                            }
+                          }
+                        },
+                        "views": {
+                          "signInMessageLabel": {
+                            "type": "label",
+                            "style": {
+                              "color": "#1D1F20",
+                              "alignment": {
+                                "horizontal": "center"
+                              },
+                              "size": {
+                                "height": {
+                                  "type": "match-content"
+                                },
+                                "width": {
+                                  "type": "match-content"
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Medium/Regular",
+                                "font": {
+                                  "*": {
+                                    "size": 13
+                                  }
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "$userDefined.signInAs": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "usernameLabel": {
+                            "type": "label",
+                            "style": {
+                              "color": "#1D1F20",
+                              "margin": {
+                                "*": {
+                                  "left": 4
+                                }
+                              },
+                              "size": {
+                                "height": {
+                                  "type": "match-content"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Medium/Regular",
+                                "font": {
+                                  "*": {
+                                    "size": 13
+                                  }
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "userDefined.signInToSystemAdminLabel": {
+                                  "type": "string",
+                                  "constantValue": "vincekhoo@craniumventures.com"
+                                }
+                              }
+                            }
+                          },
+                          "changeBtn": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "match-content"
+                                },
+                                "height": {
+                                  "type": "match-content"
+                                }
+                              }
+                            },
+                            "views": {
+                              "changeLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#167FFC",
+                                  "alignment": {
+                                    "horizontal": "center"
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 8
+                                    }
+                                  },
+                                  "size": {
+                                    "height": {
+                                      "type": "match-content"
+                                    },
+                                    "width": {
+                                      "type": "match-content"
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Medium/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 13
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.change": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "userNameField": {
+                        "type": "textField",
+                        "data": {
+                          "sources": {
+                            "$global.user.name": {
+                              "type": "string",
+                              "constantValue": "unityalliancedemo"
+                            }
+                          }
+                        },
+                        "style": {
+                          "color": "#ff0000",
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 32
+                            }
+                          },
+                          "text": {
+                            "font": {
+                              "*": {
+                                "size": 12,
+                                "weight": "regular"
+                              }
+                            }
+                          },
+                          "border": {
+                            "line": "solid",
+                            "width": {
+                              "*": 1
+                            },
+                            "color": "#DBDBDC",
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "placeholder": {
+                          "sources": {
+                            "$userDefined.userNameFieldPlaceholder": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "loginBtn": {
+                        "type": "button",
+                        "style": {
+                          "color": "#619FCB",
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 40
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 32,
+                              "left": 20,
+                              "right": 20
+                            }
+                          },
+                          "border": {
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "btnSignUpOnClick": {
+                                "action": "nextScreen",
+                                "parameters": {
+                                  "screenName": "password"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "btnLoginLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.logIn": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#FFFFFF",
+                              "margin": {
+                                "*": {
+                                  "left": 10,
+                                  "right": 10
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Large/Semibold",
+                                "font": {
+                                  "*": {
+                                    "size": 14,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "forgotPasswordBtn": {
+                        "type": "button",
+                        "style": {
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 40
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 16,
+                              "left": 20,
+                              "right": 20
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "showLoading": {
+                                "action": "ShowLoading"
+                              },
+                              "loginButtonOnClick": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "Login",
+                                  "saveResult": {
+                                    "$api.user": {
+                                      "toSources": {
+                                        "$global.user": {
+                                          "type": "object"
+                                        }
+                                      }
+                                    },
+                                    "$api.sessionToken": {
+                                      "toSources": {
+                                        "$global.sessionToken": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getInstruments": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getInstruments": {
+                            "actions": {
+                              "callGetInstruments": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetPaymentInstrument",
+                                  "saveResult": {
+                                    "$api.paymentInstruments": {
+                                      "toSources": {
+                                        "$global.paymentInstruments": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0": {
+                                      "dispatchEvents": {
+                                        "getCountries": {}
+                                      }
+                                    },
+                                    "[^0]": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCountries": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCountry",
+                                  "saveResult": {
+                                    "$api.countries": {
+                                      "toSources": {
+                                        "$global.countries": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getCurrencies": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCurrencies": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCurrency",
+                                  "saveResult": {
+                                    "$api.currencies": {
+                                      "toSources": {
+                                        "$global.currencies": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "openNextScreen": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "openNextScreen": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "navigateDashboard": {
+                                "action": "nextScreen",
+                                "parameters": {
+                                  "storyboardName": "dashboard",
+                                  "screenName": "dashboard",
+                                  "navigationType": "push"
+                                }
+                              }
+                            }
+                          },
+                          "showError": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "showErrorAlert": {
+                                "action": "alert",
+                                "parameters": {
+                                  "title": "$event.result.code",
+                                  "message": "$event.result.reason",
+                                  "buttons": [
+                                    {
+                                      "title": "Ok",
+                                      "onClickEvent": ""
+                                    },
+                                    {
+                                      "title": "Cancel",
+                                      "onClickEvent": ""
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "btnForgotPasswordLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.forgotPasswordLabel": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#494D4F",
+                              "margin": {
+                                "*": {
+                                  "left": 10,
+                                  "right": 10
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Large/Semibold",
+                                "font": {
+                                  "*": {
+                                    "size": 14,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "copyrightLabel": {
+                    "type": "label",
+                    "style": {
+                      "color": "#6D7172",
+                      "alignment": {
+                        "horizontal": "center"
+                      },
+                      "size": {
+                        "height": {
+                          "type": "match-content"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      },
+                      "text": {
+                        "name": "Mobile/Micro/Metrics",
+                        "font": {
+                          "*": {
+                            "size": 8
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.copyrightLabel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": true,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        },
+        "resetPassword": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#FFFFFF",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "mainCon": {
+                    "type": "stack",
+                    "style": {
+                      "color": "#FFFFFF",
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "synapLogo": {
+                        "type": "image",
+                        "data": {
+                          "sources": {
+                            "localImagePath.synaps_logo": {
+                              "type": "string",
+                              "constantValue": "synaps_dark"
+                            }
+                          }
+                        },
+                        "style": {
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 62
+                            }
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 127
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 30
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "resetPasswordLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 15
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Heading/H1",
+                            "font": {
+                              "*": {
+                                "size": 22,
+                                "weight": "semiBold"
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.resetYourPasswordLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "signInMessageLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 10
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Body/Medium/Regular",
+                            "font": {
+                              "*": {
+                                "size": 13
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.resetYourPasswordMessageLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "userNameField": {
+                        "type": "textField",
+                        "data": {
+                          "sources": {
+                            "$global.user.name": {
+                              "type": "string",
+                              "constantValue": "unityalliancedemo"
+                            }
+                          }
+                        },
+                        "style": {
+                          "color": "#ff0000",
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 32
+                            }
+                          },
+                          "text": {
+                            "font": {
+                              "*": {
+                                "size": 12,
+                                "weight": "regular"
+                              }
+                            }
+                          },
+                          "border": {
+                            "line": "solid",
+                            "width": {
+                              "*": 1
+                            },
+                            "color": "#DBDBDC",
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "placeholder": {
+                          "sources": {
+                            "$userDefined.userNameFieldPlaceholder": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "sendLinkBtn": {
+                        "type": "button",
+                        "style": {
+                          "color": "#619FCB",
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 40
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 32,
+                              "left": 20,
+                              "right": 20
+                            }
+                          },
+                          "border": {
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "showLoading": {
+                                "action": "ShowLoading"
+                              },
+                              "loginButtonOnClick": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "Login",
+                                  "saveResult": {
+                                    "$api.user": {
+                                      "toSources": {
+                                        "$global.user": {
+                                          "type": "object"
+                                        }
+                                      }
+                                    },
+                                    "$api.sessionToken": {
+                                      "toSources": {
+                                        "$global.sessionToken": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getInstruments": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getInstruments": {
+                            "actions": {
+                              "callGetInstruments": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetPaymentInstrument",
+                                  "saveResult": {
+                                    "$api.paymentInstruments": {
+                                      "toSources": {
+                                        "$global.paymentInstruments": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0": {
+                                      "dispatchEvents": {
+                                        "getCountries": {}
+                                      }
+                                    },
+                                    "[^0]": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCountries": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCountry",
+                                  "saveResult": {
+                                    "$api.countries": {
+                                      "toSources": {
+                                        "$global.countries": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getCurrencies": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCurrencies": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCurrency",
+                                  "saveResult": {
+                                    "$api.currencies": {
+                                      "toSources": {
+                                        "$global.currencies": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "openNextScreen": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "openNextScreen": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "navigateDashboard": {
+                                "action": "nextScreen",
+                                "parameters": {
+                                  "storyboardName": "dashboard",
+                                  "screenName": "dashboard",
+                                  "navigationType": "push"
+                                }
+                              }
+                            }
+                          },
+                          "showError": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "showErrorAlert": {
+                                "action": "alert",
+                                "parameters": {
+                                  "title": "$event.result.code",
+                                  "message": "$event.result.reason",
+                                  "buttons": [
+                                    {
+                                      "title": "Ok",
+                                      "onClickEvent": ""
+                                    },
+                                    {
+                                      "title": "Cancel",
+                                      "onClickEvent": ""
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "sendLinkBtnLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.sendResetLink": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#FFFFFF",
+                              "margin": {
+                                "*": {
+                                  "left": 10,
+                                  "right": 10
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Large/Semibold",
+                                "font": {
+                                  "*": {
+                                    "size": 14,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "backToSignInBtn": {
+                        "type": "button",
+                        "style": {
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 40
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 16,
+                              "left": 20,
+                              "right": 20
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "showLoading": {
+                                "action": "ShowLoading"
+                              },
+                              "loginButtonOnClick": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "Login",
+                                  "saveResult": {
+                                    "$api.user": {
+                                      "toSources": {
+                                        "$global.user": {
+                                          "type": "object"
+                                        }
+                                      }
+                                    },
+                                    "$api.sessionToken": {
+                                      "toSources": {
+                                        "$global.sessionToken": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getInstruments": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getInstruments": {
+                            "actions": {
+                              "callGetInstruments": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetPaymentInstrument",
+                                  "saveResult": {
+                                    "$api.paymentInstruments": {
+                                      "toSources": {
+                                        "$global.paymentInstruments": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0": {
+                                      "dispatchEvents": {
+                                        "getCountries": {}
+                                      }
+                                    },
+                                    "[^0]": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCountries": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCountry",
+                                  "saveResult": {
+                                    "$api.countries": {
+                                      "toSources": {
+                                        "$global.countries": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getCurrencies": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCurrencies": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCurrency",
+                                  "saveResult": {
+                                    "$api.currencies": {
+                                      "toSources": {
+                                        "$global.currencies": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "openNextScreen": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "openNextScreen": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "navigateDashboard": {
+                                "action": "nextScreen",
+                                "parameters": {
+                                  "storyboardName": "dashboard",
+                                  "screenName": "dashboard",
+                                  "navigationType": "push"
+                                }
+                              }
+                            }
+                          },
+                          "showError": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "showErrorAlert": {
+                                "action": "alert",
+                                "parameters": {
+                                  "title": "$event.result.code",
+                                  "message": "$event.result.reason",
+                                  "buttons": [
+                                    {
+                                      "title": "Ok",
+                                      "onClickEvent": ""
+                                    },
+                                    {
+                                      "title": "Cancel",
+                                      "onClickEvent": ""
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "btnBackToLoginLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.backToSignIn": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#494D4F",
+                              "margin": {
+                                "*": {
+                                  "left": 10,
+                                  "right": 10
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Large/Semibold",
+                                "font": {
+                                  "*": {
+                                    "size": 14,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "copyrightLabel": {
+                    "type": "label",
+                    "style": {
+                      "color": "#6D7172",
+                      "alignment": {
+                        "horizontal": "center"
+                      },
+                      "size": {
+                        "height": {
+                          "type": "match-content"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      },
+                      "text": {
+                        "name": "Mobile/Micro/Metrics",
+                        "font": {
+                          "*": {
+                            "size": 8
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.copyrightLabel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": true,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        },
+        "resetPasswordSuccess": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#FFFFFF",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "mainCon": {
+                    "type": "stack",
+                    "style": {
+                      "alignment": {
+                        "horizontal": "center"
+                      },
+                      "color": "#FFFFFF",
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "sendingSuccessImg": {
+                        "type": "image",
+                        "data": {
+                          "sources": {
+                            "localImagePath.send_reset_link_success.xml": {
+                              "type": "string",
+                              "constantValue": "send_reset_link_success"
+                            }
+                          }
+                        },
+                        "style": {
+                          "margin": {
+                            "*": {
+                              "top": 24
+                            }
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 310
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 132
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "checkYourInboxLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 11
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Heading/H1",
+                            "font": {
+                              "*": {
+                                "size": 22,
+                                "weight": "semiBold"
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.checkYourInboxLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "instructionSentLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 12
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Body/Medium/Regular",
+                            "font": {
+                              "*": {
+                                "size": 13
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.instructionSentLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "checkYourInboxMessageLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#494D4F",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 12
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Body/Medium/Regular",
+                            "font": {
+                              "*": {
+                                "size": 13
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.checkYourInboxMessageLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "emailIncorrectMessageLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#494D4F",
+                          "alignment": {
+                            "horizontal": "center"
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 12
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "name": "Mobile/Body/Medium/Regular",
+                            "font": {
+                              "*": {
+                                "size": 13
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.incorrectEmailMessageLabel": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "backToSignInBtn": {
+                        "type": "button",
+                        "style": {
+                          "color": "#619FCB",
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 40
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 32,
+                              "left": 20,
+                              "right": 20
+                            }
+                          },
+                          "border": {
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "showLoading": {
+                                "action": "ShowLoading"
+                              },
+                              "loginButtonOnClick": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "Login",
+                                  "saveResult": {
+                                    "$api.user": {
+                                      "toSources": {
+                                        "$global.user": {
+                                          "type": "object"
+                                        }
+                                      }
+                                    },
+                                    "$api.sessionToken": {
+                                      "toSources": {
+                                        "$global.sessionToken": {
+                                          "type": "string"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getInstruments": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getInstruments": {
+                            "actions": {
+                              "callGetInstruments": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetPaymentInstrument",
+                                  "saveResult": {
+                                    "$api.paymentInstruments": {
+                                      "toSources": {
+                                        "$global.paymentInstruments": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0": {
+                                      "dispatchEvents": {
+                                        "getCountries": {}
+                                      }
+                                    },
+                                    "[^0]": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCountries": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCountry",
+                                  "saveResult": {
+                                    "$api.countries": {
+                                      "toSources": {
+                                        "$global.countries": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "getCurrencies": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "getCurrencies": {
+                            "actions": {
+                              "getCountries": {
+                                "action": "APICommand",
+                                "parameters": {
+                                  "command": "GetCurrency",
+                                  "saveResult": {
+                                    "$api.currencies": {
+                                      "toSources": {
+                                        "$global.currencies": {
+                                          "type": "array"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "conditionDataSource": "$api.result.code",
+                                  "conditions": {
+                                    "^0$": {
+                                      "dispatchEvents": {
+                                        "openNextScreen": {}
+                                      }
+                                    },
+                                    "^[^0].*$": {
+                                      "dispatchEvents": {
+                                        "showError": {
+                                          "$event.result": {
+                                            "type": "object",
+                                            "fromSources": {
+                                              "$api.result": {}
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "openNextScreen": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "navigateDashboard": {
+                                "action": "nextScreen",
+                                "parameters": {
+                                  "storyboardName": "dashboard",
+                                  "screenName": "dashboard",
+                                  "navigationType": "push"
+                                }
+                              }
+                            }
+                          },
+                          "showError": {
+                            "actions": {
+                              "hideLoading": {
+                                "action": "HideLoading"
+                              },
+                              "showErrorAlert": {
+                                "action": "alert",
+                                "parameters": {
+                                  "title": "$event.result.code",
+                                  "message": "$event.result.reason",
+                                  "buttons": [
+                                    {
+                                      "title": "Ok",
+                                      "onClickEvent": ""
+                                    },
+                                    {
+                                      "title": "Cancel",
+                                      "onClickEvent": ""
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "backToSignInBtnLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.backToSignIn": {
+                                  "type": "string"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#FFFFFF",
+                              "margin": {
+                                "*": {
+                                  "left": 10,
+                                  "right": 10
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Large/Semibold",
+                                "font": {
+                                  "*": {
+                                    "size": 14,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                    }
+                  },
+                  "copyrightLabel": {
+                    "type": "label",
+                    "style": {
+                      "color": "#6D7172",
+                      "alignment": {
+                        "horizontal": "center"
+                      },
+                      "size": {
+                        "height": {
+                          "type": "match-content"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      },
+                      "text": {
+                        "name": "Mobile/Micro/Metrics",
+                        "font": {
+                          "*": {
+                            "size": 8
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.copyrightLabel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": true,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

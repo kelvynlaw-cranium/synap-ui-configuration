@@ -1,0 +1,1073 @@
+{
+  "statuses": [
+    { "title": "Invalid (0)", "value": 0 },
+    { "title": "Active (1)", "value": 1 },
+    { "title": "Down (2)", "value": 2 },
+    { "title": "Replay (3)", "value": 3 },
+    { "title": "Permanently (4)", "value": 4 },
+    { "title": "Blocked (5)", "value": 5 }
+  ],
+  "selectedStatus": 1,
+  "pointFormSampleData": [
+    "Point 1",
+    "Point 2",
+    "Point 3",
+    "Point 4",
+    "Point 5",
+    "Point 6",
+    "Point 7"
+  ],
+  "detailsListSampleData": [
+    {
+      "title": "2 Rows design",
+      "subtitle": "subtitle 1",
+      "date": "01/09/2026",
+      "status": "Active"
+    },
+    {
+      "title": "3 Rows design",
+      "subtitle": "subtitle 2",
+      "date": "02/09/2026",
+      "status": "Active"
+    },
+    {
+      "title": "4 Rows design",
+      "subtitle": "subtitle 3",
+      "subtitle2": "subtitle 3.1",
+      "date": "02/09/2026",
+      "status": "Active"
+    }
+  ],
+  "radioButtonsSampleData": [
+    {
+      "title": "Option 1",
+      "description": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "title": "Option 2",
+      "description": ""
+    },
+    {
+      "title": "Option 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae augue venenatis."
+    },
+    {
+      "title": "Option 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae augue venenatis, tempor felis ac, volutpat turpis. Donec sed convallis orci. Cras varius, nulla consequat ultricies auctor, nulla ligula facilisis odio, vitae tincidunt nulla sem et quam."
+    }
+  ],
+  "statusSampleData": [
+    {
+      "statusName": "Invalid (0)"
+    },
+    {
+      "statusName": "Active (1)"
+    },
+    {
+      "statusName": "Down (2)"
+    },
+    {
+      "statusName": "Replay (3)"
+    },
+    {
+      "statusName": "Permanently (4)"
+    },
+    {
+      "statusName": "Blocked (5)"
+    }
+  ],
+  "transactionTypeSampleData": [
+    {
+      "value": "(00)"
+    },
+    {
+      "value": "(30)"
+    },
+    {
+      "value": "(01)"
+    },
+    {
+      "value": "(31)"
+    }
+  ],
+  "timerIdSampleData": [
+    {
+      "value": "Kswitch"
+    },
+    {
+      "value": "512312"
+    },
+    {
+      "value": "Visa Timer"
+    },
+    {
+      "value": "432312"
+    },
+    {
+      "value": "Mastercard Timer"
+    },
+    {
+      "value": "NextGenBank Timer"
+    },
+    {
+      "value": "GX Bank Timer"
+    },
+    {
+      "value": "American Express Timer"
+    },
+    {
+      "value": "Timer 10"
+    },
+    {
+      "value": "Timer 11"
+    },
+    {
+      "value": "Timer 12"
+    },
+    {
+      "value": "Timer 13"
+    },
+    {
+      "value": "Timer 14"
+    },
+    {
+      "value": "Timer 15"
+    },
+    {
+      "value": "Timer 16"
+    },
+    {
+      "value": "Timer 17"
+    },
+    {
+      "value": "Timer 18"
+    },
+    {
+      "value": "Timer 19"
+    },
+    {
+      "value": "Timer 20"
+    },
+    {
+      "value": "Timer 21"
+    },
+    {
+      "value": "Timer 22"
+    },
+    {
+      "value": "Timer 23"
+    },
+    {
+      "value": "Timer 24"
+    },
+    {
+      "value": "Timer 25"
+    },
+    {
+      "value": "Timer 26"
+    },
+    {
+      "value": "Timer 27"
+    },
+    {
+      "value": "Timer 28"
+    },
+    {
+      "value": "Timer 29"
+    },
+    {
+      "value": "Timer 30"
+    },
+    {
+      "value": "Timer 31"
+    },
+    {
+      "value": "Timer 32"
+    },
+    {
+      "value": "Timer 33"
+    },
+    {
+      "value": "Timer 34"
+    },
+    {
+      "value": "Timer 35"
+    },
+    {
+      "value": "Timer 36"
+    },
+    {
+      "value": "Timer 37"
+    },
+    {
+      "value": "Timer 38"
+    },
+    {
+      "value": "Timer 39"
+    },
+    {
+      "value": "Timer 40"
+    },
+    {
+      "value": "Timer 41"
+    },
+    {
+      "value": "Timer 42"
+    },
+    {
+      "value": "Timer 43"
+    },
+    {
+      "value": "Timer 44"
+    },
+    {
+      "value": "Timer 45"
+    }
+  ],
+  "institutionSampleData": [
+    {
+      "value": "BOFB_KW_FALCON"
+    },
+    {
+      "value": "NEXTGENBANK_BRAND"
+    },
+    {
+      "value": "RUPAY"
+    },
+    {
+      "value": "CITI-SINGAPORE"
+    },
+    {
+      "value": "MASTERCARD"
+    },
+    {
+      "value": "NEXTGENBANK"
+    },
+    {
+      "value": "BOFB_KW_VN"
+    },
+    {
+      "value": "VISA"
+    },
+    {
+      "value": "VISIONNEXT"
+    },
+    {
+      "value": "BOFB"
+    },
+    {
+      "value": "FISERV"
+    },
+    {
+      "value": "BOFB_KW"
+    },
+    {
+      "value": "Institution 14"
+    },
+    {
+      "value": "Institution 15"
+    },
+    {
+      "value": "Institution 16"
+    },
+    {
+      "value": "Institution 17"
+    },
+    {
+      "value": "Institution 18"
+    },
+    {
+      "value": "Institution 19"
+    },
+    {
+      "value": "Institution 20"
+    },
+    {
+      "value": "Institution 21"
+    },
+    {
+      "value": "Institution 22"
+    },
+    {
+      "value": "Institution 23"
+    },
+    {
+      "value": "Institution 24"
+    },
+    {
+      "value": "Institution 25"
+    },
+    {
+      "value": "Institution 26"
+    },
+    {
+      "value": "Institution 27"
+    },
+    {
+      "value": "Institution 28"
+    },
+    {
+      "value": "Institution 29"
+    },
+    {
+      "value": "Institution 30"
+    },
+    {
+      "value": "Institution 31"
+    },
+    {
+      "value": "Institution 32"
+    },
+    {
+      "value": "Institution 33"
+    },
+    {
+      "value": "Institution 34"
+    },
+    {
+      "value": "Institution 35"
+    },
+    {
+      "value": "Institution 36"
+    },
+    {
+      "value": "Institution 37"
+    },
+    {
+      "value": "Institution 38"
+    },
+    {
+      "value": "Institution 39"
+    },
+    {
+      "value": "Institution 40"
+    },
+    {
+      "value": "Institution 41"
+    },
+    {
+      "value": "Institution 42"
+    },
+    {
+      "value": "Institution 43"
+    },
+    {
+      "value": "Institution 44"
+    },
+    {
+      "value": "Institution 45"
+    }
+  ],
+  "copyrightLabel": "Copyright © 2025 CraniumVentures. All rights reserved.",
+  "welcomeBackLabel": "Welcome back!",
+  "signInToSystemAdminLabel": "Sign in to System Admin",
+  "continue": "Continue",
+  "signInAs": "Sign in as",
+  "change": "Change",
+  "logIn": "Log In",
+  "resetYourPasswordLabel": "Reset your password",
+  "resetYourPasswordMessageLabel": "Enter your email address and we’ll send you instructions.",
+  "sendResetLink": "Send Reset Link",
+  "backToSignIn": "Back to Sign in",
+  "checkYourInboxLabel": "Check your inbox",
+  "instructionSentLabel": "We’ve sent password reset instructions to [vincekhoo@craniumventures.com].",
+  "checkYourInboxMessageLabel": "Please check the above email for spelling mistakes.",
+  "incorrectEmailMessageLabel": "If the email is correct and you still don't find the email in your inbox, please check your spam or junk folder as well.",
+  "systemConfigurationLabel": "System Configurations",
+  "userNameFieldPlaceholder": "Enter Username",
+  "forgotPasswordLabel": "Forgot Password",
+  "institutionSettings": "Institution Settings",
+  "institutionManagementLabel": "Institution Management",
+  "cryptogramManagementLabel": "Cryptogram Management",
+  "timerManagementLabel": "Timer Management",
+  "binPrefixManagementLabel": "BIN Prefix Management",
+  "routeManagementLabel": "Route Management",
+  "tableManagementLabel": "Table Management",
+  "configurationFileLabel": "Configuration File",
+  "hotCardLabel": "Hot Card",
+  "institutionManagementData": {
+    "updated": 500,
+    "active": 15000,
+    "total": 16000
+  },
+  "updatedLast7DaysLabel": "Updated Last 7 days",
+  "activeLast7DaysLabel": "Active Last 7 days",
+  "totalLabel": "Total",
+  "searchIcon": "search_icon",
+  "searchYourQueryHereLabel": "Search your query here...",
+  "institutionData": [
+    {
+      "title": "FIS",
+      "type": "Record Type: Branch",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "FISERV",
+      "type": "Record Type: Branch",
+      "lastUpdate": "04/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "NewInst",
+      "type": "Record Type: KL Branch",
+      "lastUpdate": "03/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "KJMLSIMHOST",
+      "type": "Record Type: Branch",
+      "lastUpdate": "02/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "Visa-Malaysia",
+      "type": "Record Type: Branch",
+      "lastUpdate": "01/03/2026",
+      "status": "Active"
+    }
+  ],
+  "cryptogramManagementData": {
+    "updated": 500,
+    "active": 15000,
+    "total": 16000
+  },
+  "cryptogramData": [
+    {
+      "title": "kswitch",
+      "type": "Key Function: LPK",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "kswitch",
+      "type": "Key Function: LMK",
+      "lastUpdate": "04/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "00000589198",
+      "type": "Key Function: DEK",
+      "lastUpdate": "03/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "CrytoTestIDname",
+      "type": "Key Function: DEK",
+      "lastUpdate": "02/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "DEVICE-BDK-0001",
+      "type": "Key Function: FPE",
+      "lastUpdate": "01/03/2026",
+      "status": "Active"
+    }
+  ],
+  "cryptogramSingleData": {
+    "keyFunction": "LPK",
+    "keyAlgorithm": 2,
+    "bitSize": 190,
+    "id": "kswitch",
+    "lastUpdate": "Last modified : 04 Sept 2024, 10:30 AM",
+    "status": "Active"
+  },
+  "timerData": [
+    {
+      "title": "kswitch",
+      "chronoUnit": "Chrono Unit : 1",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "512312",
+      "chronoUnit": "Chrono Unit : 1",
+      "lastUpdate": "04/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "432321",
+      "chronoUnit": "Chrono Unit : 1",
+      "lastUpdate": "03/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "432312",
+      "chronoUnit": "Chrono Unit : 1",
+      "lastUpdate": "02/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "kswitch 03",
+      "chronoUnit": "Chrono Unit : 1",
+      "lastUpdate": "01/03/2026",
+      "status": "Active"
+    }
+  ],
+  "timerSingleData": {
+    "id": "kswitch",
+    "priority": "1",
+    "lastUpdate": "Last modified : 04 Sept 2024, 10:30 AM",
+    "status": "Active"
+  },
+  "timerManagementData": {
+    "updated": 500,
+    "active": 15000,
+    "total": 16000
+  },
+  "binPrefixData": [
+    {
+      "institution": "Citi-Singapore",
+      "prefix": "552230",
+      "priority": "Priority : 10",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "institution": "Citi-Malaysia",
+      "prefix": "552230",
+      "priority": "Priority : 2",
+      "lastUpdate": "06/03/2026",
+      "status": "Active"
+    },
+    {
+      "institution": "Mastercard",
+      "prefix": "552230",
+      "priority": "Priority : 10",
+      "lastUpdate": "07/03/2026",
+      "status": "Active"
+    },
+    {
+      "institution": "Visa",
+      "prefix": "425010",
+      "priority": "Priority : 10",
+      "lastUpdate": "10/03/2026",
+      "status": "Active"
+    },
+    {
+      "institution": "Visa",
+      "prefix": "552230",
+      "priority": "Priority : 10",
+      "lastUpdate": "12/03/2026",
+      "status": "Active"
+    }
+  ],
+  "binPrefixSingleData": {
+    "institution": "Citi-Singapore",
+    "prefix": "552230",
+    "priority": "10",
+    "lastUpdate": "Last modified : 04 Sept 2024, 10:30 AM",
+    "status": "Active"
+  },
+  "binPrefixManagementData": {
+    "updated": 500,
+    "active": 15000,
+    "total": 16000
+  },
+  "routeData": [
+    {
+      "routingId": "VISIONNEXT",
+      "linkName": "visionnext-driver",
+      "linkOrder": "Link Order : 1",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "routingId": "VISIONNEXT",
+      "linkName": "visionnext-driver 2",
+      "linkOrder": "Link Order : 2",
+      "lastUpdate": "06/03/2026",
+      "status": "Active"
+    },
+    {
+      "routingId": "VISIONNEXT",
+      "linkName": "visionnext-driver 3",
+      "linkOrder": "Link Order : 3",
+      "lastUpdate": "07/03/2026",
+      "status": "Active"
+    },
+    {
+      "routingId": "FALCON",
+      "linkName": "visionnext-driver",
+      "linkOrder": "Link Order : 4",
+      "lastUpdate": "10/03/2026",
+      "status": "Active"
+    }
+  ],
+  "routeManagementData": {
+    "updated": 500,
+    "active": 15000,
+    "total": 16000
+  },
+  "hotCardData": [
+    {
+      "cardNumber": "5500 0000 0000 0004",
+      "responseCode": "41-Lost Card",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "cardNumber": "3400 0000 0000 009",
+      "responseCode": "41-Lost Card",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "cardNumber": "6011 0009 9013 9424",
+      "responseCode": "43-Stolen Card",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "cardNumber": "3530 1113 3330 0000",
+      "responseCode": "41-Lost Card",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    }
+  ],
+  "hotCardManagementData": {
+    "updated": 500,
+    "total": 16000
+  },
+  "hotCardManagementLabel": "Hot Card Management",
+  "tableManagementDescriptionLabel": "A configuration file is a file that can contain sensitive information and is used to store settings for applications",
+  "tableData": [
+    {
+      "database": "KDB",
+      "table": "app_css_profile",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "database": "KDB",
+      "table": "kswitchinstitution",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "database": "KDB",
+      "table": "kswitchinstitution_timers",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    },
+    {
+      "database": "KAUTH",
+      "table": "kswitchinstitution_timers",
+      "lastUpdate": "05/03/2026",
+      "status": "Active"
+    }
+  ],
+  "configurationFileManagementDescriptionLabel": "A configuration file is a file that can contain sensitive information and is used to store settings for applications",
+  "configurationFileData": [
+    {
+      "type": "CFG",
+      "fileName": "knode.cfg",
+      "lastUpdate": "05/03/2026",
+      "dir": "$KSHARE_LOCAL_DIR/"
+    },
+    {
+      "type": "BACKUP",
+      "fileName": "knode.cfg.kconfig_service.backup",
+      "lastUpdate": "05/03/2026",
+      "dir": "$KSHARE_LOCAL_DIR/"
+    },
+    {
+      "type": "CFG",
+      "fileName": "test_knode.cfg",
+      "lastUpdate": "05/03/2026",
+      "dir": "$KSHARE_LOCAL_DIR/"
+    },
+    {
+      "type": "BACKUP",
+      "fileName": "test_knode.cfg.kconfig_service.backup",
+      "lastUpdate": "05/03/2026",
+      "dir": "$KSHARE_LOCAL_DIR/"
+    },
+    {
+      "type": "CFG",
+      "fileName": "20022sim.cfg",
+      "lastUpdate": "05/03/2026",
+      "dir": "$KSWITCH_SHARE_DIR/kswitch/config/"
+    }
+  ],
+  "institutionInformationLabel": "Institution Information",
+  "institutionNameLabel": "Institution Name",
+  "statusLabel": "Status",
+  "typeLabel": "Type",
+  "ownerLabel": "Owner",
+  "productCodeLabel": "Product Code",
+  "networkProductCategoryLabel": "Network Product category",
+  "cardNetworkLabel": "Card Network",
+  "currencyCodeLabel": "Currency Code",
+  "countryCodeLabel": "Country Code",
+  "operatingRegionLabel": "Operating Region",
+  "processingLabel": "Processing",
+  "shutdownTimeoutLabel": "Shutdown Timeout",
+  "authorizationLabel": "Authorization",
+  "processingData": [
+    "Send request use crypto (0x02)",
+    "Send reply use crypto (0x08)"
+  ],
+  "authorizationData": [
+    "Institution allow pre-authorization (A)",
+    "Institution allow positive authorization (P)"
+  ],
+  "flagsLabel": "Flags",
+  "safSettingsLabel": "SAF Settings",
+  "interleavePolicyLabel": "Interleave Policy",
+  "maxConcurrentLabel": "Max Concurrent",
+  "maxTimeoutLabel": "Max Timeout",
+  "retryLabel": "Retry",
+  "consecutiveTimeoutCountLabel": "Consecutive Timeout Count",
+  "cryptogramInformationLabel": "Cryptogram Information",
+  "cryptogramIdLabel": "Cryptogram ID",
+  "keyFunctionLabel": "Key Function",
+  "keyAlgorithmLabel": "Key Algorithm",
+  "bitSizeLabel": "Bit Size",
+  "initializationVectorLabel": "Initialization Vector",
+  "cryptogramLabel": "Cryptogram",
+  "keyCheckValueLabel": "Key Check Value",
+  "keyIndexLabel": "Key Index",
+  "timerInformationLabel": "Timer Information",
+  "timerIdLabel": "Timer ID",
+  "chronoUnitLabel": "Chrono Unit",
+  "timerConfigurationLabel": "Timer Configuration",
+  "timer0Label": "Timer 0",
+  "timerALabel": "Timer A",
+  "timerKLabel": "Timer K",
+  "timer1Label": "Timer 1",
+  "timer2Label": "Timer 2",
+  "timer1220Label": "Timer 1220",
+  "timer3Label": "Timer 3",
+  "timer4Label": "Timer 4",
+  "timer5Label": "Timer 5",
+  "timer6Label": "Timer 6",
+  "timer7Label": "Timer 7",
+  "timer8Label": "Timer 8",
+  "timer9Label": "Timer 9",
+  "timer10Label": "Timer 10",
+  "timer11Label": "Timer 11",
+  "binPrefixInformationLabel": "BIN Prefix Information",
+  "prefixLabel": "Prefix",
+  "descriptionLabel": "Description",
+  "filenameLabel": "Filename",
+  "productCategoryLabel": "Product Category",
+  "cvvLabel": "CVV",
+  "assignPrefixInformationLabel": "Assign Prefix Information",
+  "institutionLabel": "Institution",
+  "priorityLabel": "Priority",
+  "linkInformationLabel": "Link Information",
+  "routingIdLabel": "Routing ID",
+  "linkNameLabel": "Link Name",
+  "linkOrderLabel": "Link Order",
+  "linkTypeLabel": "Link Type",
+  "connectionLabel": "Connection",
+  "addressLabel": "Address",
+  "portLabel": "Port",
+  "headerLabel": "Header",
+  "headerLengthLabel": "Header Length",
+  "lockLabel": "Lock",
+  "connectionModeLabel": "Connection Mode",
+  "selectedModeLabel": "Selected mode",
+  "selectedModeData": [
+    "Read",
+    "Write",
+    "ReadWrite",
+    "Create",
+    "Exclusive",
+    "Synce",
+    "ASync"
+  ],
+  "transactionTypeLabel": "Transaction Type",
+  "transactionTypeData": [
+    {
+      "title": "(02)",
+      "date": "12/01/2025",
+      "status": "Active"
+    },
+    {
+      "title": "(03)",
+      "date": "04/03/2025",
+      "status": "Active"
+    },
+    {
+      "title": "(05)",
+      "date": "22/05/2025",
+      "status": "Active"
+    },
+    {
+      "title": "(07)",
+      "date": "15/08/2025",
+      "status": "Active"
+    },
+    {
+      "title": "(11)",
+      "date": "02/11/2025",
+      "status": "Active"
+    },
+    {
+      "title": "(13)",
+      "date": "20/01/2026",
+      "status": "Active"
+    },
+    {
+      "title": "(17)",
+      "date": "11/03/2026",
+      "status": "Active"
+    },
+    {
+      "title": "(19)",
+      "date": "28/04/2026",
+      "status": "Active"
+    }
+  ],
+  "transactionTypeSingleData": {
+    "processingCode": "(02)",
+    "lastUpdate": "Last modified : 04 Sept 2024, 10:30 AM",
+    "status": "Active"
+  },
+  "binPrefixLabel": "BIN Prefix",
+  "routingInformationLabel": "Routing Information",
+  "routingInformationData": [
+    {
+      "title": "visionnext-driver",
+      "subtitle": "Visionnext",
+      "routingOrder": "Routing Order : 1",
+      "date": "04/09/2026"
+    },
+    {
+      "title": "falcon-driver",
+      "subtitle": "Falcon",
+      "routingOrder": "Routing Order : 2",
+      "date": "04/09/2026"
+    },
+    {
+      "title": "visionnext-driver 2",
+      "subtitle": "Visionnext",
+      "routingOrder": "Routing Order : 3",
+      "date": "04/09/2026"
+    }
+  ],
+  "routingInformationSingleData": {
+    "connectorName": "visionnext-driver",
+    "id": "visionnext",
+    "routingOrder": "1",
+    "lastUpdate": "Last modified : 04 Sept 2024, 10:30 AM",
+    "linkType": "VisionNext",
+    "status": "Active"
+  },
+  "infoLabel": "Info",
+  "viewOrEditBinPrefixDetailsDescriptionLabel": "You can view or edit the details on the Bin Prefix Management page.",
+  "viewOrEditTimerDetailsDescriptionLabel": "You can view or edit the details on the Timer Management page.",
+  "viewOrEditCryptogramDetailsDescriptionLabel": "You can view or edit the details on the Cryptogram Management page.",
+  "viewOrEditRoutingDetailsDescriptionLabel": "You can view or edit the details on the Routing  Management page.",
+  "viewDetailLabel": "view detail",
+  "removePrefixLabel": "Remove Prefix",
+  "removeTimerLabel": "Remove Timer",
+  "removeCryptogramLabel": "Remove Cryptogram",
+  "removeConnectorLabel": "Remove Connector",
+  "idLabel": "ID",
+  "routeLabel": "Route",
+  "connectorNameLabel": "Connector Name",
+  "routingOrderLabel": "Routing Order",
+  "processingCodeLabel": "Processing Code",
+  "removeProcessingCodeLabel": "Remove Processing Code",
+  "newInstitutionLabel": "New Institution",
+  "createInstitutionDescriptionLabel": "Configure institution, transaction type, route and etc",
+  "nextAdvancedSettingsLabel": "Next: Advanced Settings",
+  "skipNCreateNowLabel": "Skip & Create Now",
+  "institutionIdLabel": "Institution ID",
+  "institutionTypeLabel": "Institution Type",
+  "ownerOfTheInstitutionLabel": "Owner of the institution",
+  "areYouAnIndependentInstitutionLabel": "Are you an independent institution?",
+  "institutionParentLabel": "Institution Parent",
+  "step1of5BasicInfoLabel": "Step 1of 5 — Basic Info",
+  "step2Of5AdditionalInfoLabel": "Step 2 of 5 — Additional Info",
+  "configureAdditionalInstitutionSettingsLabel": "Configure additional institution settings.",
+  "noteNumericValueMax4DigitsLabel": "Note: Numeric value, max 4 digits.",
+  "step3Of5ProcessingLabel": "Step 3 of 5 — Processing",
+  "receiveRequestUseCrypto0x01Label": "Receive request use crypto (0x01)",
+  "sendRequestUseCrypto0x02Label": "Send request use crypto (0x02)",
+  "receiveReplyUseCrypto0x04Label": "Receive reply use crypto (0x04)",
+  "sendReplyUseCrypto0x08Label": "Send reply use crypto (0x08)",
+  "noTimeoutReversal0x10Label": "No timeout reversal (0x10)",
+  "shutdownLabel": "Shutdown",
+  "shutdownNoLinkLLabel": "Shutdown no link (L)",
+  "shutdownTimeoutTLabel": "Shutdown timeout (T)",
+  "shutdownSafSLabel": "Shutdown SAF (S)",
+  "institutionAllowPreAuthorizationALabel": "Institution allow pre-authorization (A)",
+  "institutionAllowPositiveAuthorizationPLabel": "Institution allow positive authorization (P)",
+  "institutionAllowNegativeAuthorizationNLabel": "Institution allow negative authorization (N)",
+  "step4Of5StoreForwardLabel": "Step 4 of 5 — Store & Forward",
+  "safInterleavePolicyLabel": "SAF Interleave Policy",
+  "standinLabel": "Standin",
+  "saveMyLoginDetailsForNextTimeLabel": "Save my login details for next time.",
+  "rejectLabel": "Reject",
+  "safReplayRejectAllLabel": "All incoming transactions during replay get rejected",
+  "rejectCardLabel": "Reject-card",
+  "safCardRejectPolicyLabel": "An incoming transactions for which the card is found on the SAF log, gets rejected. Otherwise, the transaction is processed real time",
+  "safMaxConcurrentLabel": "SAF Max Concurrent",
+  "defaultValueIs0CanBeModifiedIfNeededLabel": "Default value is 0; can be modified if needed.",
+  "safMaxTimeoutLabel": "SAF Max Timeout",
+  "safRetryLabel": "SAF Retry",
+  "step5Of5AttachLabel": "Step 5 of 5 — Attach",
+  "attachIdsInstructionLabel": "Attach a Timer ID, Cryptogram ID, Routing ID if available. You can also do this anytime later.",
+  "createInstitutionLabel": "Create Institution",
+  "nextLabel": "Next",
+  "safInterleavePolicyOptions": [
+    {
+      "title": "Standin",
+      "description": "Save my login details for next time."
+    },
+    {
+      "title": "Reject",
+      "description": "All incoming transactions during replay get rejected."
+    },
+    {
+      "title": "Reject-card",
+      "description": "An incoming transactions for which the card is found on the SAF log, gets rejected. Otherwise, the transaction is processed real time."
+    }
+  ],
+  "newCryptogram": "New Cryptogram",
+  "step1of2BasicInfoLabel": "Step 1of 2 — Basic Info",
+  "configureCryptogramDescriptionLabel": "Configure various cryptogram for an institution.",
+  "step2of2ConfigurationLabel": "Step 2 of 2 — Configuration",
+  "defaultValue1DescriptionLabel": "Default value is 1; can be modified if needed.",
+  "defaultValue192DescriptionLabel": "Default value is 192; can be modified if needed.",
+  "createCryptogramLabel": "Create Cryptogram",
+  "configureTimerSettingsLabel": "Configure timer settings for an institution",
+  "timerDefaultSettingsDescriptionLabel": "Timer values for this institution are pre-filled with default settings. You can adjust them anytime.",
+  "createTimerLabel": "Create Timer",
+  "newBinPrefixLabel": "New BIN Prefix",
+  "step1of2PrefixDetailsLabel": "Step 1of 2 — Prefix Details",
+  "configureBinPrefixDescriptionLabel": "Configure BIN Prefix for an institution",
+  "productCodeExampleLabel": "e.g., 1010 for credit card",
+  "productCategoryExampleLabel": "e.g., Credit",
+  "step2of2AssignPrefixLabel": "Step 2of 2 — Assign Prefix",
+  "priorityExampleLabel": "eg. 10",
+  "createBinPrefixLabel": "Create Bin Prefix",
+  "newRouteLabel": "New Route",
+  "configureRouteDescriptionLabel": "Configure the route for the institution.",
+  "newRoutingIdLabel": "New Routing ID",
+  "routingIdExampleLabel": "eg.RoutingForVisa",
+  "configureBasicInfoLabel": "Configure basic information institution settings.",
+  "step2Of5LinkTypeLabel": "Step 2 of 5 — Link Type",
+  "step2Of3LinkTypeLabel": "Step 2 of 3 — Link Type",
+  "newLinkLabel": "New Link",
+  "integrateNewLinkDescriptionLabel": "Create a new link name to integrate the new router into your application.",
+  "existingLinkLabel": "Existing Link",
+  "integrateExistingLinkDescriptionLabel": "Choose an existing link name to integrate the new router into your application.",
+  "linkTypeExampleLabel": "e.g., API_Connect, DB_Link",
+  "step3Of5FlagTypeLabel": "Step 3 of 5 — Flag Type",
+  "step3Of3FlagTypeLabel": "Step 3 of 3 — Flag Type",
+  "accountIdentifyAddressLabel": "The address used to identify your account.",
+  "institutionUpLabel": "InstitutionUp",
+  "institutionUpDescriptionLabel": "Institution must be marked up to use this route ",
+  "safLabel": "SAF",
+  "safRouteDescriptionLabel": "Using this route causes a SAF record to be written",
+  "noReplayLabel": "NoReplay",
+  "noReplayDescriptionLabel": "Do not use this route for replay transactions",
+  "shutdownMarkDownDescriptionLabel": "Using this route causes the institution to be marked down",
+  "noNetworkLabel": "NoNetwork",
+  "noNetworkDescriptionLabel": "Do not send 0600 or 0800 messages to this route",
+  "posAuthLabel": "POSAUTH",
+  "posAuthDescriptionLabel": "This endpoint is a positive authorization endpoint",
+  "preAuthLabel": "PREAUTH",
+  "preAuthDescriptionLabel": "This endpoint is a pre-authorization endpoint",
+  "multipleConnectionsLabel": "MultipleConnections",
+  "multipleConnectionsDescriptionLabel": "This endpoint accepts multiple connections",
+  "isSafReplayLabel": "IsSafReplay",
+  "deviceDriverLabel": "DeviceDriver",
+  "deviceDriverDescriptionLabel": "This endpoint is a device driver and we should read the merchant record",
+  "encryptedPanLabel": "EncryptedPan",
+  "encryptedPanDescriptionLabel": "This endpoint sends the pan encrypted",
+  "disabledLabel": "Disabled",
+  "endpointDisabledDescriptionLabel": "This endpoint is disabled",
+  "step4Of5ConnectionLabel": "Step 4 of 5 — Connection",
+  "step5Of5ConnectionModeLabel": "Step 5 of 5 — Connection Mode",
+  "readLabel": "Read",
+  "enableReadingLabel": "Enable reading",
+  "writeLabel": "Write",
+  "enableWritingLabel": "Enable writing ",
+  "readWriteLabel": "ReadWrite",
+  "enableReadWriteLabel": "Enable both reading and writing",
+  "appendLabel": "Append",
+  "appendModeDescriptionLabel": "Open the connector in append mode. If supported, all writes go to the end of the file",
+  "truncateLabel": "Truncate",
+  "truncateDescriptionLabel": "Truncate the connector to zero size if supported when opening",
+  "createLabel": "Create",
+  "createIfNotExistsDescriptionLabel": "If the connector does not exist, create it",
+  "exclusiveLabel": "Exclusive",
+  "exclusiveCreateDescriptionLabel": "If the connector does exist and create is set, then fail to open and create",
+  "syncLabel": "Sync",
+  "syncFlushDescriptionLabel": "All writes to the connector are flushed before the write returns; if supported",
+  "asyncLabel": "ASync",
+  "asyncDescriptionLabel": "All I/O is async on the connector. This is not supported by all connectors",
+  "nonBlockingLabel": "NonBlocking",
+  "nonBlockingDescriptionLabel": "Non-blocking I/O. If an I/O operation would block, fail and return an error",
+  "listenLabel": "Listen",
+  "listenDescriptionLabel": "When using open(), translate that into a listen() call",
+  "connectLabel": "Connect",
+  "connectDescriptionLabel": "When using open(), translate that into a connect() call",
+  "packetDataLabel": "Packetdata",
+  "packetDataDescriptionLabel": "Packet data",
+  "createRouteLabel": "Create Route",
+  "newHotCardLabel": "New Hot Card",
+  "addHotCardDescriptionLabel": "Add a hot card to prevent unauthorized use.",
+  "panLabel": "PAN",
+  "selectResponseCodeLabel": "Select response code",
+  "createHotCardLabel": "Create Hot Card",
+  "newRecordLabel": "New Record",
+  "addTableRecordDescriptionLabel": "Add record to Table A",
+  "activeFlagLabel": "ActiveFlag",
+  "createRecordLabel": "Create Record",
+  "nameLabel": "Name",
+  "dataLabel": "Data",
+  "updateInstitutionInfoLabel": "Update Institution Info.",
+  "saveLabel": "Save",
+  "institutionStatusLabel": "Institution Status ",
+  "recordTypeLabel": "Record Type",
+  "updateFlagsLabel": "Update Flags",
+  "updateSafLabel": "Update SAF",
+  "safInterleavePolicyDescriptionLabel": "Store and forward intellect policy.",
+  "updateTimerInfoLabel": "Update Timer Info.",
+  "updateTimerConfigurationLabel": "Update Timer Configuration",
+  "updateBinPrefixInfoLabel": "Update Bin Prefix Info.",
+  "updateAssignPrefixInfoLabel": "Update Assign Prefix Info.",
+  "updateLinkInfoLabel": "Update Link Info.",
+  "updateConnectionLabel": "Update Connection",
+  "updateConnectionModeLabel": "Update Connection Mode",
+  "updateFlagsTypeLabel": "Update Flags Type",
+  "updateRecordLabel": "Update Record",
+  "connectionTypeHintLabel": "(e.g., HTTP, TCP, WebSocket, Custom)",
+  "connectionAddressHintLabel": "Enter connector IP address or domain",
+  "connectionPortHintLabel": "(e.g., 443)",
+  "connectionLockHintLabel": "Enter lock token or leave blank if unused",
+  "recordDateLabel": "Record Date",
+  "processingCodeOptionalSectionLabel": "Optional section for input the processing code for the institution.",
+  "noProcessingCodeAddedLabel": "No Processing Code Added",
+  "setTxTypeViaProcessingCodeLabel": "Set transaction type via processing code for the Institution.",
+  "addProcessingCodeLabel": "Add Processing Code",
+  "attachTransactionTypeLabel": "Attach Transaction Type",
+  "setProcessingCodeLabel": "Set Processing Code",
+  "selectProcessingCodeLabel": "Select the processing code for your institution.",
+  "applyLabel": "Apply",
+  "newProcessingCodeLabel": "New Processing Code",
+  "customProcessingCodeLabel": "Custom Processing Code",
+  "processingCodeExampleLabel": "(e.g., 00, 03,20)",
+  "institutionSavedSuccessPromptLabel": "Your institution has been saved successfully! Would you like to attach transaction type now? You can always do this later if needed.",
+  "attachNowLabel": "Attach Now",
+  "skipForNowLabel": "Skip for Now",
+  "attachInstitutionLabel": "Attach Institution",
+  "linkInstitutionDescriptionLabel": "Link a financial institution to your cryptogram for transactions.",
+  "noInstitutionLinkedLabel": "No Institution Linked",
+  "noInstitutionLinkedDescriptionLabel": "You haven’t linked any institution yet.",
+  "linkInstitutionLabel": "Link Institution",
+  "selectTimerIdLabel": "Select a Timer ID",
+  "selectCryptogramIdLabel": "Select a Cryptogram ID",
+  "selectRoutingIdLabel": "Select a Routing ID",
+  "attachPrefixLabel": "Attach Prefix",
+  "selectPrefixDescriptionLabel": "Select the prefix for your institution.",
+  "selectExistingInstitutionLabel": "Select one of the existing Institution"
+
+}
