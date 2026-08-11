@@ -248,9 +248,12 @@
                           "./onClicked": {
                             "actions": {
                               "btnSignUpOnClick": {
-                                "action": "nextScreen",
+                                "action": "RemoveItemFromArray",
                                 "parameters": {
-                                  "screenName": "password"
+                                  "index": "1",
+                                  "dataSources": {
+                                    "$testArray": {}
+                                  }
                                 }
                               }
                             }
@@ -2408,7 +2411,6 @@
                           }
                         }
                       }
-
                     }
                   },
                   "copyrightLabel": {
