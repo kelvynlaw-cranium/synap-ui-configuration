@@ -31,8 +31,9 @@
       "server": {
         "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/user_define_data.json"
       }
-    },
-    "ui": {
+    }
+  },
+  "ui": {
       "parameters": {
         "listViewTypes": [
           "gridView",
@@ -231,5 +232,4 @@
         }
       }
     }
-  }
 }
