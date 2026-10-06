@@ -1,0 +1,4542 @@
+{
+  "synapapi": "0.0.1",
+  "info": {
+    "title": "Cranium Ventures Device API Services",
+    "version": "0.0.1",
+    "description": "Cranium Ventures' RESTful API definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "servers": {
+    "ExternalNetwork": {
+      "title": "Cranium Ventures' Sandbox",
+      "description": "Testing Sandbox for Cranium Ventures' Services",
+      "enable": true,
+      "secure": true,
+      "type": "http",
+      "url": "b21536fc-1105-46e5-a167-dd7ec6acd7c1.mock.pstmn.io",
+      "verifyPeer": false,
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      }
+    },
+    "InternalNetwork-Belian": {
+      "title": "Cranium Ventures' Sandbox (Belian)",
+      "description": "Testing Sandbox for Cranium Ventures' Services",
+      "enable": false,
+      "secure": false,
+      "type": "http",
+      "url": "10.1.1.9:9010",
+      "verifyPeer": false,
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      }
+    }
+  },
+  "components": {
+    "constants": {},
+    "schemas": {
+      "user.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "user": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "user.password": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "user": {
+              "type": "object",
+              "properties": {
+                "password": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "changePassword.currentPassword": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "changePassword": {
+              "type": "object",
+              "properties": {
+                "currentPassword": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "changePassword.newPassword": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "changePassword": {
+              "type": "object",
+              "properties": {
+                "newPassword": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "user.newPassword": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "user": {
+              "type": "object",
+              "properties": {
+                "newPassword": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "user.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "user": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "contact.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "contact": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "contact.type": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "contact": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "password.resetToken": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "password": {
+              "type": "object",
+              "properties": {
+                "resetToken": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "location.ipAddress": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "location": {
+              "type": "object",
+              "properties": {
+                "ipAddress": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "team.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "team": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "organization.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "organization": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "policy.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "policy": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "mobile.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "mobile": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "email.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "email": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "mailingAddress.type": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "mailingAddress": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "accessRightObject.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "accessRightObject": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "AccessRightActionsObject": {
+        "type": "object",
+        "properties": {
+          "<replace_with_action_name>": {
+            "type": "boolean"
+          }
+        }
+      },
+      "CursorOnGetRequest": {
+        "type": "object",
+        "properties": {
+          "creation": {
+            "type": "string",
+            "synap": {
+              "schemas": {
+                "cursor": {
+                  "type": "object",
+                  "properties": {
+                    "creation": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "recordOffset": {
+            "type": "number",
+            "synap": {
+              "schemas": {
+                "cursor": {
+                  "type": "object",
+                  "properties": {
+                    "recordOffset": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "recordCount": {
+            "type": "number",
+            "synap": {
+              "schemas": {
+                "cursor": {
+                  "type": "object",
+                  "properties": {
+                    "recordCount": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "CursorOnFetchRequest": {
+        "type": "object",
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "synap": {
+              "schemas": {
+                "cursor": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "recordOffset": {
+            "type": "number",
+            "synap": {
+              "schemas": {
+                "cursor": {
+                  "type": "object",
+                  "properties": {
+                    "recordOffset": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "recordCount": {
+            "type": "number",
+            "synap": {
+              "schemas": {
+                "cursor": {
+                  "type": "object",
+                  "properties": {
+                    "recordCount": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "merchant.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "merchant": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "paymentInstrument.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "paymentInstrument": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "paymentInstrumentNumber.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "paymentInstrumentNumber": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "paymentInstrumentSerial.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "paymentInstrumentSerial": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "paymentInstrumentProduct.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "paymentInstrumentProduct": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "paymentInstrumentProduct.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "paymentInstrumentProduct": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "paymentInstrumentFunding.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "paymentInstrumentFunding": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "content.name": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "content": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "contentProvision.serverIdentifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "contentProvision": {
+              "type": "object",
+              "properties": {
+                "serverIdentifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "lifeMedicalInsuranceProduct.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "lifeMedicalInsuranceProduct": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "lifeMedicalInsurancePlan.identifier": {
+        "type": "string",
+        "synap": {
+          "schemas": {
+            "lifeMedicalInsurancePlan": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requests": {
+      "UserAccessRights": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "accessRightObject": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/accessRightObject.name"
+                    }
+                  }
+                },
+                "accessRightActions": {
+                  "$ref": "#/components/schemas/AccessRightActionsObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "TeamAccessRights": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "team": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/team.name"
+                    }
+                  }
+                },
+                "accessRightObject": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/accessRightObject.name"
+                    }
+                  }
+                },
+                "accessRightActions": {
+                  "$ref": "#/components/schemas/AccessRightActionsObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "OrganizationAccessRights": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "accessRightObject": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/accessRightObject.name"
+                    }
+                  }
+                },
+                "accessRightActions": {
+                  "$ref": "#/components/schemas/AccessRightActionsObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "NewUpdateUserProfile": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "userProfile": {
+                  "type": "object",
+                  "properties": {
+                    "nationalRegistrationIdentityCard": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "nationalRegistrationIdentityCard": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "gender": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "gender": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "nationality": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "nationality": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "race": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "race": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "birthdate": {
+                      "type": "string",
+                      "format": "date",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "birthdate": {
+                                "type": "string",
+                                "format": "date"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "salutationPrefix": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "salutationPrefix": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "salutationSuffix": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "salutationSuffix": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "firstName": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "firstName": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "middleName": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "middleName": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "lastName": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "lastName": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "otherName": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "userProfile": {
+                            "type": "object",
+                            "properties": {
+                              "otherName": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "NewUpdateUserMailingAddress": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "mailingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "$ref": "#/components/schemas/mailingAddress.type"
+                    },
+                    "addressLine1": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine1": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "addressLine2": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine2": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "addressLine3": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine3": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "city": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "city": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "provinceState": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "provinceState": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "countryCode": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "countryCode": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "postalCode": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "postalCode": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "responses": {
+      "SynapResponse": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "schemas": {
+                  "$api": {
+                    "type": "object",
+                    "callbacks": {
+                      "CopyObject": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "synapSessionToken": {
+        "type": "apiKey",
+        "description": "Synap's session token is required for all commands except few specific purpose commands",
+        "name": "x-synap-SessionToken",
+        "in": "header",
+        "schema": {
+          "type": "string",
+          "synap": {
+            "schemas": {
+              "$global": {
+                "type": "object",
+                "properties": {
+                  "sessionToken": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "synapSessionToken": []
+    }
+  ],
+  "commands": {
+    "GetInstitutions": {
+      "title": "Get Institutions",
+      "description": "Get the institution list from the mock server",
+      "http": {
+        "/getInstitution": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    },
+                    "password": {
+                      "$ref": "#/components/schemas/user.password"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "Login": {
+      "title": "Login/Sign In",
+      "description": "User/System login or sign in",
+      "http": {
+        "/command/Login": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    },
+                    "password": {
+                      "$ref": "#/components/schemas/user.password"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "Logout": {
+      "title": "Logout/Sign Out",
+      "description": "User logout or sign out",
+      "http": {
+        "/command/Logout": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "ContactShortList": {
+      "title": "Retrieve eContact list",
+      "description": "Retrieve list of econtact for an user",
+      "http": {
+        "/command/ContactShortList": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "ChangePassword": {
+      "title": "Change User Password",
+      "description": "Users to change their password",
+      "http": {
+        "/command/password.change": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    },
+                    "password": {
+                      "$ref": "#/components/schemas/changePassword.currentPassword"
+                    },
+                    "newPassword": {
+                      "$ref": "#/components/schemas/changePassword.newPassword"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "RequestToResetPassword": {
+      "title": "Request To Reset Password",
+      "description": "Request a security token for reset password",
+      "http": {
+        "/command/RequestToResetPassword": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "synap": {
+                    "scope": {
+                      "location": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "properties": {
+                    "ipAddress": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "ipAddress": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "currentTimestamp": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "currentTimestamp": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "application": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "application": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "mobile": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/mobile.identifier"
+                    }
+                  }
+                },
+                "email": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/email.identifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "VerifyResetPasswordToken": {
+      "title": "Verify Password Reset Token",
+      "description": "Verify the security token of reset password",
+      "http": {
+        "/command/VerifyResetPasswordToken": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "password": {
+                  "type": "object",
+                  "properties": {
+                    "resetToken": {
+                      "$ref": "#/components/schemas/password.resetToken"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "ResetPassword": {
+      "title": "Reset Password",
+      "description": "Reset user's password",
+      "http": {
+        "/command/ResetPassword": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "newPassword": {
+                      "$ref": "#/components/schemas/user.newPassword"
+                    }
+                  }
+                },
+                "password": {
+                  "type": "object",
+                  "properties": {
+                    "resetToken": {
+                      "$ref": "#/components/schemas/password.resetToken"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "ipAddress": {
+                      "$ref": "#/components/schemas/location.ipAddress"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "AuthenticateUser": {
+      "title": "Authenticate User",
+      "description": "Authenticate user credentials",
+      "http": {
+        "/command/AuthenticateUser": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    },
+                    "password": {
+                      "$ref": "#/components/schemas/user.password"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "CheckUserAccessRights": {
+      "title": "Check User's Access Rights",
+      "description": "Check if user has permission granted to perform an action on object",
+      "http": {
+        "/command/CheckUserAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "accessRight": {
+                  "type": "object",
+                  "properties": {
+                    "expression": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "accessRight": {
+                            "type": "object",
+                            "properties": {
+                              "expression": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetUserAccessRights": {
+      "title": "Get List of Access Rights For An User",
+      "description": "Check list of access rights for an user",
+      "http": {
+        "/command/GetUserAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "accessRightObject": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/accessRightObject.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetTeamAccessRights": {
+      "title": "Get List of Access Rights For A Team",
+      "description": "Check list of access rights for a team",
+      "http": {
+        "/command/GetTeamAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "team": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/team.name"
+                    }
+                  }
+                },
+                "accessRightObject": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/accessRightObject.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetOrganizationAccessRights": {
+      "title": "Get List of Access Rights For An Organization",
+      "description": "Check list of access rights for an organization",
+      "http": {
+        "/command/GetOrganizationAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "accessRightObject": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/accessRightObject.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GrantUserAccessRights": {
+      "title": "Grant Access Rights For An User",
+      "description": "Grant access rights for an user",
+      "http": {
+        "/command/GrantUserAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/UserAccessRights"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GrantTeamAccessRights": {
+      "title": "Grant Access Rights For A Team",
+      "description": "Grant access rights for a team",
+      "http": {
+        "/command/GrantTeamAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/TeamAccessRights"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GrantOrganizationAccessRights": {
+      "title": "Grant Access Rights For An Organization",
+      "description": "Grant access rights for an organization",
+      "http": {
+        "/command/GrantOrganizationAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/OrganizationAccessRights"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "RevokeUserAccessRights": {
+      "title": "Revoke Access Rights For An User",
+      "description": "Revoke access rights for an user",
+      "http": {
+        "/command/RevokeUserAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/UserAccessRights"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "RevokeTeamAccessRights": {
+      "title": "Revoke Access Rights For A Team",
+      "description": "Revoke access rights for a team",
+      "http": {
+        "/command/RevokeUserAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/TeamAccessRights"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "RevokeOrganizationAccessRights": {
+      "title": "Revoke Access Rights For An Organization",
+      "description": "Revoke access rights for an organization",
+      "http": {
+        "/command/RevokeOrganizationAccessRights": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/OrganizationAccessRights"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetOrganization": {
+      "title": "Get Organization List",
+      "description": "Retrieve list of organization records",
+      "http": {
+        "/command/GetOrganization": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnGetRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "FetchOrganization": {
+      "title": "Fetch List Of Organization",
+      "description": "Fetch list of organization based on cursor",
+      "http": {
+        "/command/FetchOrganization": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnFetchRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetUser": {
+      "title": "Get User List",
+      "description": "Retrieve list of user records",
+      "http": {
+        "/command/GetUser": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnGetRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "FetchUser": {
+      "title": "Fetch List Of User",
+      "description": "Fetch list of user based on cursor",
+      "http": {
+        "/command/FetchUser": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnFetchRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetUserDetailsOfAnUser": {
+      "title": "Get An User's Details",
+      "description": "Retrieve details of an user",
+      "http": {
+        "/command/GetUserDetailsOfAnUser": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "NewUser": {
+      "title": "New User Record",
+      "description": "Create a new user record",
+      "http": {
+        "/command/NewUser": {
+          "enable": true,
+          "security": []
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "policy": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/policy.name"
+                    },
+                    "inactivityTimeout": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "policy": {
+                            "type": "object",
+                            "properties": {
+                              "inactivityTimeout": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "maximumSessions": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "policy": {
+                            "type": "object",
+                            "properties": {
+                              "maximumSessions": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "team": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/team.name"
+                    }
+                  }
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    },
+                    "preferName": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "user": {
+                            "type": "object",
+                            "properties": {
+                              "preferName": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "newPassword": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "user": {
+                            "type": "object",
+                            "properties": {
+                              "newPassword": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "oneTimePassword": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "user": {
+                            "type": "object",
+                            "properties": {
+                              "oneTimePassword": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "firstTimePassword": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "user": {
+                            "type": "object",
+                            "properties": {
+                              "firstTimePassword": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "UpdateUser": {
+      "title": "Update User Record",
+      "description": "Update an user's record",
+      "http": {
+        "/command/UpdateUser": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "policy": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/policy.name"
+                    },
+                    "inactivityTimeout": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "policy": {
+                            "type": "object",
+                            "properties": {
+                              "inactivityTimeout": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "maximumSessions": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "policy": {
+                            "type": "object",
+                            "properties": {
+                              "maximumSessions": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "team": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/team.name"
+                    }
+                  }
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    },
+                    "preferName": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "user": {
+                            "type": "object",
+                            "properties": {
+                              "preferName": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "DeleteUser": {
+      "title": "Delete User Record",
+      "description": "Delete an user's record",
+      "http": {
+        "/command/DeleteUser": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetUserProfile": {
+      "title": "Get User Profile",
+      "description": "Retrieve user's profile",
+      "http": {
+        "/command/GetUserProfile": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnGetRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "NewUserProfile": {
+      "title": "New User's Profile",
+      "description": "Create an user's profile record",
+      "http": {
+        "/command/NewUserProfile": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/NewUpdateUserProfile"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "UpdateUserProfile": {
+      "title": "Update User's Profile",
+      "description": "Update an existing user's profile record",
+      "http": {
+        "/command/UpdateUserProfile": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/NewUpdateUserProfile"
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetCurrency": {
+      "title": "Get Currency List",
+      "description": "Retrieve list of currency",
+      "http": {
+        "/command/GetCurrency": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "currency": {
+                  "type": "object",
+                  "properties": {
+                    "isoAlphaCode": {
+                      "type": "string"
+                    },
+                    "isoNumbericCode": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetCountry": {
+      "title": "Get Country List",
+      "description": "Retrieve list of country",
+      "http": {
+        "/command/GetCountry": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "currency": {
+                  "type": "object",
+                  "properties": {
+                    "isoAlpha2Code": {
+                      "type": "string"
+                    },
+                    "isoAlpha3Code": {
+                      "type": "string"
+                    },
+                    "isoNumbericCode": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetUserContactOfAnUser": {
+      "title": "Get An User's Contact List",
+      "description": "Retrieve list of an user's contact",
+      "http": {
+        "/command/GetUserContactOfAnUser": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "contact": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/contact.identifier"
+                    },
+                    "type": {
+                      "$ref": "#/components/schemas/contact.type"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "NewUserContact": {
+      "title": "New User's Contact Record",
+      "description": "Create a new user's contact record",
+      "http": {
+        "/command/NewUserContact": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "contact": {
+                  "type": "object",
+                  "synap": {
+                    "schemas": {
+                      "contact": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "callbacks": {
+                    "CopyObject": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "UpdateUserContact": {
+      "title": "Update User's Contact Record",
+      "description": "Update an existing user's contact record",
+      "http": {
+        "/command/UpdateUserContact": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "contact": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "contact": {
+                            "type": "object",
+                            "properties": {
+                              "identifier": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "address": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "contact": {
+                            "type": "object",
+                            "properties": {
+                              "address": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "flags": {
+                      "type": "object",
+                      "synap": {
+                        "schemas": {
+                          "contact": {
+                            "type": "object",
+                            "properties": {
+                              "flags": {
+                                "type": "object"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "callbacks": {
+                        "CopyObject": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "DeleteUserContact": {
+      "title": "Delete User's Contact Record",
+      "description": "Delete an existing user's contact record",
+      "http": {
+        "/command/DeleteUserContact": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "contact": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "contact": {
+                            "type": "object",
+                            "properties": {
+                              "identifier": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetUserMailingAddress": {
+      "title": "Get User Mailing Address List",
+      "description": "Retrieve list of user's mailing addresses",
+      "http": {
+        "/command/GetUserMailingAddress": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "mailingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "$ref": "#/components/schemas/mailingAddress.type"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "NewUserMailingAddress": {
+      "title": "New User's Mailing Address",
+      "description": "Create a new user's mailing address",
+      "http": {
+        "/command/NewUserMailingAddress": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/NewUpdateUserMailingAddress",
+        "_contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "mailingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "$ref": "#/components/schemas/mailingAddress.type"
+                    },
+                    "addressLine1": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine1": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "addressLine2": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine2": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "addressLine3": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine3": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "city": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "city": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "provinceState": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "provinceState": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "countryCode": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "countryCode": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "postalCode": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "postalCode": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "UpdateUserMailingAddress": {
+      "title": "Update User's Mailing Address",
+      "description": "Update an existing user's mailing address",
+      "http": {
+        "/command/UpdateUserMailingAddress": {
+          "enable": true
+        }
+      },
+      "request": {
+        "$ref": "#/components/requests/NewUpdateUserMailingAddress",
+        "_contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "mailingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "$ref": "#/components/schemas/mailingAddress.type"
+                    },
+                    "addressLine1": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine1": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "addressLine2": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine2": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "addressLine3": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "addressLine3": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "city": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "city": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "provinceState": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "provinceState": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "countryCode": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "countryCode": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "postalCode": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "mailingAddress": {
+                            "type": "object",
+                            "properties": {
+                              "postalCode": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "DeleteUserMailingAddress": {
+      "title": "Delete User Mailing Address",
+      "description": "Delete an existing user's mailing address",
+      "http": {
+        "/command/DeleteUserMailingAddress": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                },
+                "mailingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "$ref": "#/components/schemas/mailingAddress.type"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "ActivatePaymentInstrument": {
+      "title": "Activate User's Payment Instrument Function",
+      "description": "Activate payment instrument function for an user",
+      "http": {
+        "/command/ActivatePaymentInstrument": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/user.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetPaymentInstrumentProduct": {
+      "title": "Get Payment Instrument Product List",
+      "description": "Retrieve list of payment instrument product records",
+      "http": {
+        "/command/GetPaymentInstrumentProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/user.identifier"
+                    }
+                  }
+                },
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnGetRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "FetchPaymentInstrumentProduct": {
+      "title": "Fetch List Of Payment Instrument's Product",
+      "description": "Fetch list of payment instrument's product based on cursor",
+      "http": {
+        "/command/FetchPaymentInstrumentProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnFetchRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "NewPaymentInstrumentProduct": {
+      "title": "New Payment Instrument's Product Record",
+      "description": "Create a new payment instrument's product record",
+      "http": {
+        "/command/NewPaymentInstrumentProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "paymentInstrumentNumber": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/paymentInstrumentNumber.name"
+                    }
+                  }
+                },
+                "paymentInstrumentSerial": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/paymentInstrumentSerial.name"
+                    }
+                  }
+                },
+                "paymentInstrumentProduct": {
+                  "type": "object",
+                  "synap": {
+                    "schemas": {
+                      "paymentInstrumentProduct": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "callbacks": {
+                    "CopyObject": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "UpdatePaymentInstrumentProduct": {
+      "title": "Update Payment Instrument's Product Record",
+      "description": "Update an existing payment instrument's product record",
+      "http": {
+        "/command/UpdatePaymentInstrumentProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "paymentInstrumentProduct": {
+                  "type": "object",
+                  "synap": {
+                    "schemas": {
+                      "paymentInstrumentProduct": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "callbacks": {
+                    "CopyObject": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "DeletePaymentInstrumentProduct": {
+      "title": "Delete Payment Instrument's Product Record",
+      "description": "Delete an existing payment instrument's product record",
+      "http": {
+        "/command/DeletePaymentInstrumentProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "paymentInstrumentProduct": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/paymentInstrumentProduct.name"
+                    },
+                    "type": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrumentProduct": {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetPaymentInstrument": {
+      "title": "Get User's Payment Instrument List",
+      "description": "Retrieve list of user's payment instrument records",
+      "http": {
+        "/command/GetPaymentInstrument": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/user.identifier"
+                    }
+                  }
+                },
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnGetRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "FetchPaymentInstrument": {
+      "title": "Fetch List Of User's Payment Instrument",
+      "description": "Fetch list of user's payment instrument based on cursor",
+      "http": {
+        "/command/FetchPaymentInstrument": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "cursor": {
+                  "$ref": "#/components/schemas/CursorOnFetchRequest"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetPaymentInstrumentDetails": {
+      "title": "Get User's Payment Instrument Details",
+      "description": "Retrieve details of user's payment instrument record",
+      "http": {
+        "/command/GetPaymentInstrumentDetails": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "paymentInstrument": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/paymentInstrument.identifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "NewPaymentInstrument": {
+      "title": "New User's Payment Instrument Record",
+      "description": "Create a new user's payment instrument record",
+      "http": {
+        "/command/NewPaymentInstrument": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/user.identifier"
+                    }
+                  }
+                },
+                "merchant": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/merchant.identifier"
+                    }
+                  }
+                },
+                "paymentInstrumentProduct": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/paymentInstrumentProduct.identifier"
+                    }
+                  }
+                },
+                "paymentInstrumentFunding": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/paymentInstrumentFunding.identifier"
+                    }
+                  }
+                },
+                "paymentInstrument": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "branch": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "branch": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "autoTopupMode": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "autoTopupMode": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "autoTopupAmount": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "autoTopupAmount": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "autoTopupThreadholdBalance": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "autoTopupThreadholdBalance": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "UpdatePaymentInstrument": {
+      "title": "Update User's Payment Instrument Record",
+      "description": "Update an existing user's payment instrument record",
+      "http": {
+        "/command/UpdatePaymentInstrument": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "merchant": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/merchant.identifier"
+                    }
+                  }
+                },
+                "paymentInstrumentFunding": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/paymentInstrumentFunding.identifier"
+                    }
+                  }
+                },
+                "paymentInstrument": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/paymentInstrument.identifier"
+                    },
+                    "status": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "status": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "description": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "autoTopupMode": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "autoTopupMode": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "autoTopupAmount": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "autoTopupAmount": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "autoTopupThreadholdBalance": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "paymentInstrument": {
+                            "type": "object",
+                            "properties": {
+                              "autoTopupThreadholdBalance": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "DeletePaymentInstrument": {
+      "title": "Delete User's Payment Instrument Record",
+      "description": "Delete an existing user's payment instrument record",
+      "http": {
+        "/command/DeletePaymentInstrument": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "paymentInstrument": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "$ref": "#/components/schemas/paymentInstrument.identifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetSubscribedContent": {
+      "title": "Get An Organization's Subscribed Contents",
+      "description": "Retrieve contents subscribed by an organization",
+      "http": {
+        "/command/GetSubscribedContent": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetLifeMedicalInsuranceCity": {
+      "title": "Get City List For Life & Medical Insurance",
+      "description": "Retrieve list of city for life & medical insurance",
+      "http": {
+        "/command/GetLifeMedicalInsuranceCity": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetLifeMedicalInsuranceProduct": {
+      "title": "Get Life & Medical Insurance Product List",
+      "description": "Retrieve list of life & medical insurance product",
+      "http": {
+        "/command/GetLifeMedicalInsuranceProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetLifeMedicalInsurancePlan": {
+      "title": "Get Life & Medical Insurance Plan List",
+      "description": "Retrieve list of life & medical insurance plan",
+      "http": {
+        "/command/GetLifeMedicalInsurancePlan": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsuranceProduct": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsuranceProduct.identifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetLifeMedicalInsurancePlanBandPremiumsByProduct": {
+      "title": "Get Life & Medical Insurance Plan Band Premimums By Product",
+      "description": "Retrieve the list of life & medical insurance premiums for band premium type based insurance product identifier",
+      "http": {
+        "/command/GetLifeMedicalInsurancePlanBandPremiumsByProduct": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsuranceProduct": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsuranceProduct.identifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetLifeMedicalInsurancePlanBandPremiumsByPlan": {
+      "title": "Get Life & Medical Insurance Plan Band Premimums By Plan",
+      "description": "Retrieve the list of life & medical insurance premiums for band premium type based insurance plan identifier",
+      "http": {
+        "/command/GetLifeMedicalInsurancePlanBandPremiumsByPlan": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsuranceProduct": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsuranceProduct.identifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsurancePlan": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsurancePlan.identifier"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetProposedLifeMedicalInsurancePlan": {
+      "title": "Get Propsoed Life & Medical Insurance Plan",
+      "description": "Retrieve list of proposed life & medical insurance plan",
+      "http": {
+        "/command/GetProposedLifeMedicalInsurancePlan": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "organization": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/organization.name"
+                    }
+                  }
+                },
+                "content": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "$ref": "#/components/schemas/content.name"
+                    }
+                  }
+                },
+                "insuredPerson": {
+                  "type": "object",
+                  "synap": {
+                    "scope": {
+                      "insuredPerson": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "properties": {
+                    "gender": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "gender": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "birthdate": {
+                      "type": "string",
+                      "format": "date",
+                      "synap": {
+                        "schemas": {
+                          "birthdate": {
+                            "type": "string",
+                            "format": "date"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "GetLifeMedicalInsurancePlanPremiumToPay": {
+      "title": "Get Life & Medical Insurance Plan Premimum For Payment",
+      "description": "Calculate the net premium amount of the selected life & medical insurance plan for payment",
+      "http": {
+        "/command/GetLifeMedicalInsurancePlanPremiumToPay": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsuranceProduct": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsuranceProduct.identifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsurancePlan": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsurancePlan.identifier"
+                    }
+                  }
+                },
+                "insuredPersons": {
+                  "type": "array",
+                  "synap": {
+                    "schemas": {
+                      "insuredPersons": {
+                        "type": "array"
+                      }
+                    }
+                  },
+                  "items": {
+                    "type": "object",
+                    "callbacks": {
+                      "CopyObject": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "PayLifeMedicalInsurancePlanPremium": {
+      "title": "Pay Life & Medical Insurance Plan Premimum",
+      "description": "Pay the net premium amount of the selected life & medical insurance plan",
+      "http": {
+        "/command/PayLifeMedicalInsurancePlanPremium": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "contentProvision": {
+                  "type": "object",
+                  "properties": {
+                    "serverIdentifier": {
+                      "$ref": "#/components/schemas/contentProvision.serverIdentifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsuranceProduct": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsuranceProduct.identifier"
+                    }
+                  }
+                },
+                "lifeMedicalInsurancePlan": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "$ref": "#/components/schemas/lifeMedicalInsurancePlan.identifier"
+                    }
+                  }
+                },
+                "insuredPersons": {
+                  "type": "array",
+                  "synap": {
+                    "schemas": {
+                      "insuredPersons": {
+                        "type": "array"
+                      }
+                    }
+                  },
+                  "items": {
+                    "type": "object",
+                    "callbacks": {
+                      "CopyObject": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "Pay": {
+      "title": "Generic payment API",
+      "description": "Use for general payment.",
+      "http": {
+        "/command/Pay": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {
+                "merchant": {
+                  "type": "object",
+                  "properties": {
+                    "identifier": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "$userDefined": {
+                            "type": "object",
+                            "properties": {
+                              "systemDefault": {
+                                "type": "object",
+                                "properties": {
+                                  "merchantIdentifier": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "payment": {
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "payment": {
+                            "type": "object",
+                            "properties": {
+                              "amount": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "currencyCode": {
+                      "type": "number",
+                      "synap": {
+                        "schemas": {
+                          "payment": {
+                            "type": "object",
+                            "properties": {
+                              "currencyCode": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "instrument": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "string",
+                      "synap": {
+                        "schemas": {
+                          "payment": {
+                            "type": "object",
+                            "properties": {
+                              "selectedInstrumentNumber": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    },
+    "Echo": {
+      "title": "Generic payment API",
+      "description": "Use for general payment.",
+      "http": {
+        "/Echo": {
+          "enable": true
+        }
+      },
+      "request": {
+        "contents": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "synap": {
+                "scope": {
+                  "$global": {
+                    "type": "object"
+                  }
+                }
+              },
+              "properties": {}
+            }
+          }
+        }
+      },
+      "responses": {
+        "*": {
+          "$ref": "#/components/responses/SynapResponse"
+        }
+      }
+    }
+  }
+}
