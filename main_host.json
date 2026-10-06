@@ -1,0 +1,1356 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "components": {
+    "styles": {
+      "MobileMicroMetrics": {
+        "color": "#6D7172",
+        "alignment": {
+          "horizontal": "center"
+        },
+        "size": {
+          "height": {
+            "type": "match-content"
+          },
+          "width": {
+            "type": "fill-parent"
+          }
+        },
+        "text": {
+          "font": {
+            "*": {
+              "size": 8
+            }
+          }
+        }
+      }
+    }
+  },
+  "storyboards": {
+    "system_configuration": {
+      "title": "Main storyboard",
+      "description": "Storyboard to present upon loaded",
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#F2F4F7",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "mainCon": {
+                    "type": "stack",
+                    "orientation": "vertical",
+                    "style": {
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "backBtn": {
+                        "type": "button",
+                        "style": {
+                          "alignment": {
+                            "vertical": "middle"
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 43
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 46
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "leftArrow": {
+                            "type": "image",
+                            "data": {
+                              "sources": {
+                                "localImagePath.arrow_left": {
+                                  "type": "string",
+                                  "constantValue": "left_arrow"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "match-content",
+                                  "value": {
+                                    "*": 23
+                                  }
+                                },
+                                "height": {
+                                  "type": "match-content",
+                                  "value": {
+                                    "*": 24
+                                  }
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "scrollView": {
+                        "type": "scrollView",
+                        "style": {
+                          "size": {
+                            "height": {
+                              "type": "fill-parent"
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          }
+                        },
+                        "views": {
+                          "scrollCon": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              }
+                            },
+                            "views": {
+                              "systemConfigurationLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#1D1F20",
+                                  "alignment": {
+                                    "horizontal": "center"
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 20,
+                                      "top": 2
+                                    }
+                                  },
+                                  "size": {
+                                    "height": {
+                                      "type": "match-content"
+                                    },
+                                    "width": {
+                                      "type": "match-content"
+                                    }
+                                  },
+                                  "text": {
+                                    "font": {
+                                      "*": {
+                                        "size": 22,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.systemConfigurationLabel": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "institutionSettingsCon": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 20,
+                                      "right": 20
+                                    }
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    },
+                                    "height": {
+                                      "type": "match-content"
+                                    }
+                                  },
+                                  "border": {
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "color": "#ffffff"
+                                },
+                                "views": {
+                                  "institutionSettingsTextCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "margin": {
+                                        "*": {
+                                          "top": 16,
+                                          "left": 12
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        },
+                                        "height": {
+                                          "type": "match-content"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "institutionSettingsIcon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 40
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 24
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.institution_settings": {
+                                              "type": "string",
+                                              "constantValue": "institution_settings"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "institutionSettingsLabel": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#1D1F20",
+                                          "margin": {
+                                            "*": {
+                                              "left": 8
+                                            }
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "text": {
+                                          "font": {
+                                            "*": {
+                                              "size": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.institutionSettings": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "institutionManagementButton": {
+                                    "type": "button",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "institutionManagementCon": {
+                                        "type": "stack",
+                                        "orientation": "horizontal",
+                                        "style": {
+                                          "alignment": {
+                                            "vertical": "middle"
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "views": {
+                                          "institutionManagementLabel": {
+                                            "type": "label",
+                                            "style": {
+                                              "margin": {
+                                                "*": {
+                                                  "top": 16,
+                                                  "left": 16,
+                                                  "bottom": 16
+                                                }
+                                              },
+                                              "size": {
+                                                "width": {
+                                                  "type": "fill-parent"
+                                                },
+                                                "height": {
+                                                  "type": "match-content"
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "$userDefined.institutionManagementLabel": {
+                                                  "type": "string",
+                                                  "constantValue": "institution_settings"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "institutionManagementIcon": {
+                                            "type": "image",
+                                            "style": {
+                                              "size": {
+                                                "width": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                },
+                                                "height": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                }
+                                              },
+                                              "margin": {
+                                                "*": {
+                                                  "right": 16
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "localImagePath.right_arrow": {
+                                                  "type": "string",
+                                                  "constantValue": "right_arrow"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "events": {
+                                      "./onClicked": {
+                                        "actions": {
+                                          "institutionSettingsClicked": {
+                                            "action": "nextScreen",
+                                            "parameters": {
+                                              "storyboardName": "institution_management",
+                                              "screenName": ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "institutionDivider": {
+                                    "type": "divider",
+                                    "style": {
+                                      "color": "#DBDBDC",
+                                      "margin": {
+                                        "*": {
+                                          "left": 16,
+                                          "right": 16
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "cryptogramManagementButton": {
+                                    "type": "button",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "cryptogramManagementCon": {
+                                        "type": "stack",
+                                        "orientation": "horizontal",
+                                        "style": {
+                                          "alignment": {
+                                            "vertical": "middle"
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "views": {
+                                          "cryptogramManagementLabel": {
+                                            "type": "label",
+                                            "style": {
+                                              "margin": {
+                                                "*": {
+                                                  "top": 16,
+                                                  "left": 16,
+                                                  "bottom": 16
+                                                }
+                                              },
+                                              "size": {
+                                                "width": {
+                                                  "type": "fill-parent"
+                                                },
+                                                "height": {
+                                                  "type": "match-content"
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "$userDefined.cryptogramManagementLabel": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "cryptogramManagementIcon": {
+                                            "type": "image",
+                                            "style": {
+                                              "size": {
+                                                "width": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                },
+                                                "height": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                }
+                                              },
+                                              "margin": {
+                                                "*": {
+                                                  "right": 16
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "localImagePath.right_arrow": {
+                                                  "type": "string",
+                                                  "constantValue": "right_arrow"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "events": {
+                                      "./onClicked": {
+                                        "actions": {
+                                          "cryptogramManagementClicked": {
+                                            "action": "nextScreen",
+                                            "parameters": {
+                                              "storyboardName": "cryptogram_management",
+                                              "screenName": ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+
+                                  "cryptogramManagementDivider": {
+                                    "type": "divider",
+                                    "style": {
+                                      "color": "#DBDBDC",
+                                      "margin": {
+                                        "*": {
+                                          "left": 16,
+                                          "right": 16
+                                        }
+                                      }
+                                    }
+                                  },
+
+                                  "timerManagementButton": {
+                                    "type": "button",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "timerManagementCon": {
+                                        "type": "stack",
+                                        "orientation": "horizontal",
+                                        "style": {
+                                          "alignment": {
+                                            "vertical": "middle"
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "views": {
+                                          "timerManagementLabel": {
+                                            "type": "label",
+                                            "style": {
+                                              "margin": {
+                                                "*": {
+                                                  "top": 16,
+                                                  "left": 16,
+                                                  "bottom": 16
+                                                }
+                                              },
+                                              "size": {
+                                                "width": {
+                                                  "type": "fill-parent"
+                                                },
+                                                "height": {
+                                                  "type": "match-content"
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "$userDefined.timerManagementLabel": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "timerManagementIcon": {
+                                            "type": "image",
+                                            "style": {
+                                              "size": {
+                                                "width": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                },
+                                                "height": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                }
+                                              },
+                                              "margin": {
+                                                "*": {
+                                                  "right": 16
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "localImagePath.right_arrow": {
+                                                  "type": "string",
+                                                  "constantValue": "right_arrow"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "events": {
+                                      "./onClicked": {
+                                        "actions": {
+                                          "timerManagementClicked": {
+                                            "action": "nextScreen",
+                                            "parameters": {
+                                              "storyboardName": "timer_management",
+                                              "screenName": ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+
+                                  "timerManagementDivider": {
+                                    "type": "divider",
+                                    "style": {
+                                      "color": "#DBDBDC",
+                                      "margin": {
+                                        "*": {
+                                          "left": 16,
+                                          "right": 16
+                                        }
+                                      }
+                                    }
+                                  },
+
+                                  "binPrefixManagementButton": {
+                                    "type": "button",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "binPrefixManagementCon": {
+                                        "type": "stack",
+                                        "orientation": "horizontal",
+                                        "style": {
+                                          "alignment": {
+                                            "vertical": "middle"
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "views": {
+                                          "binPrefixManagementLabel": {
+                                            "type": "label",
+                                            "style": {
+                                              "margin": {
+                                                "*": {
+                                                  "top": 16,
+                                                  "left": 16,
+                                                  "bottom": 16
+                                                }
+                                              },
+                                              "size": {
+                                                "width": {
+                                                  "type": "fill-parent"
+                                                },
+                                                "height": {
+                                                  "type": "match-content"
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "$userDefined.binPrefixManagementLabel": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "binPrefixManagementIcon": {
+                                            "type": "image",
+                                            "style": {
+                                              "size": {
+                                                "width": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                },
+                                                "height": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                }
+                                              },
+                                              "margin": {
+                                                "*": {
+                                                  "right": 16
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "localImagePath.right_arrow": {
+                                                  "type": "string",
+                                                  "constantValue": "right_arrow"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "events": {
+                                      "./onClicked": {
+                                        "actions": {
+                                          "binPrefixManagementClicked": {
+                                            "action": "nextScreen",
+                                            "parameters": {
+                                              "storyboardName": "bin_prefix_management",
+                                              "screenName": ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+
+                                  "binPrefixManagementDivider": {
+                                    "type": "divider",
+                                    "style": {
+                                      "color": "#DBDBDC",
+                                      "margin": {
+                                        "*": {
+                                          "left": 16,
+                                          "right": 16
+                                        }
+                                      }
+                                    }
+                                  },
+
+                                  "routeManagementButton": {
+                                    "type": "button",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "routeManagementCon": {
+                                        "type": "stack",
+                                        "orientation": "horizontal",
+                                        "style": {
+                                          "alignment": {
+                                            "vertical": "middle"
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "views": {
+                                          "routeManagementLabel": {
+                                            "type": "label",
+                                            "style": {
+                                              "margin": {
+                                                "*": {
+                                                  "top": 16,
+                                                  "left": 16,
+                                                  "bottom": 16
+                                                }
+                                              },
+                                              "size": {
+                                                "width": {
+                                                  "type": "fill-parent"
+                                                },
+                                                "height": {
+                                                  "type": "match-content"
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "$userDefined.routeManagementLabel": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "routeManagementIcon": {
+                                            "type": "image",
+                                            "style": {
+                                              "size": {
+                                                "width": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                },
+                                                "height": {
+                                                  "type": "fixed",
+                                                  "value": {
+                                                    "*": 20
+                                                  }
+                                                }
+                                              },
+                                              "margin": {
+                                                "*": {
+                                                  "right": 16
+                                                }
+                                              }
+                                            },
+                                            "data": {
+                                              "sources": {
+                                                "localImagePath.right_arrow": {
+                                                  "type": "string",
+                                                  "constantValue": "right_arrow"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "events": {
+                                      "./onClicked": {
+                                        "actions": {
+                                          "routeManagementClicked": {
+                                            "action": "nextScreen",
+                                            "parameters": {
+                                              "storyboardName": "route_management",
+                                              "screenName": ""
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "tableManagementButton": {
+                                "type": "button",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "tableManagementCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 16,
+                                          "left": 20,
+                                          "right": 20
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        },
+                                        "height": {
+                                          "type": "match-content"
+                                        }
+                                      },
+                                      "border": {
+                                        "radius": {
+                                          "topLeft": 12,
+                                          "topRight": 12,
+                                          "bottomLeft": 12,
+                                          "bottomRight": 12
+                                        }
+                                      },
+                                      "color": "#ffffff"
+                                    },
+                                    "views": {
+                                      "tableManagementIcon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 40
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 24
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "left": 12,
+                                              "top": 16,
+                                              "bottom": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.table_management": {
+                                              "type": "string",
+                                              "constantValue": "table_management"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "tableManagementLabel": {
+                                        "type": "label",
+                                        "style": {
+                                          "margin": {
+                                            "*": {
+                                              "top": 16,
+                                              "left": 8,
+                                              "bottom": 16
+                                            }
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.tableManagementLabel": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "tableManagementArrow": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "right": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.right_arrow": {
+                                              "type": "string",
+                                              "constantValue": "right_arrow"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "events": {
+                                  "./onClicked": {
+                                    "actions": {
+                                      "tableManagementClicked": {
+                                        "action": "nextScreen",
+                                        "parameters": {
+                                          "storyboardName": "table_management",
+                                          "screenName": ""
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "configurationFileButton": {
+                                "type": "button",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "configurationFileCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 16,
+                                          "left": 20,
+                                          "right": 20
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        },
+                                        "height": {
+                                          "type": "match-content"
+                                        }
+                                      },
+                                      "border": {
+                                        "radius": {
+                                          "topLeft": 12,
+                                          "topRight": 12,
+                                          "bottomLeft": 12,
+                                          "bottomRight": 12
+                                        }
+                                      },
+                                      "color": "#ffffff"
+                                    },
+                                    "views": {
+                                      "configurationFileIcon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 40
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 24
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "left": 12,
+                                              "top": 16,
+                                              "bottom": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.configuration_file": {
+                                              "type": "string",
+                                              "constantValue": "configuration_file"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "configurationFileLabel": {
+                                        "type": "label",
+                                        "style": {
+                                          "margin": {
+                                            "*": {
+                                              "top": 16,
+                                              "left": 8,
+                                              "bottom": 16
+                                            }
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.configurationFileLabel": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "configurationFileArrow": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "right": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.right_arrow": {
+                                              "type": "string",
+                                              "constantValue": "right_arrow"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "events": {
+                                  "./onClicked": {
+                                    "actions": {
+                                      "configurationFileClicked": {
+                                        "action": "nextScreen",
+                                        "parameters": {
+                                          "storyboardName": "configuration_file_management",
+                                          "screenName": ""
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "hotCardButton": {
+                                "type": "button",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "hotCardCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 16,
+                                          "left": 20,
+                                          "right": 20
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        },
+                                        "height": {
+                                          "type": "match-content"
+                                        }
+                                      },
+                                      "border": {
+                                        "radius": {
+                                          "topLeft": 12,
+                                          "topRight": 12,
+                                          "bottomLeft": 12,
+                                          "bottomRight": 12
+                                        }
+                                      },
+                                      "color": "#ffffff"
+                                    },
+                                    "views": {
+                                      "hotCardIcon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 40
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 24
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "left": 12,
+                                              "top": 16,
+                                              "bottom": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.hot_card": {
+                                              "type": "string",
+                                              "constantValue": "hot_card"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "hotCardLabel": {
+                                        "type": "label",
+                                        "style": {
+                                          "margin": {
+                                            "*": {
+                                              "top": 16,
+                                              "left": 8,
+                                              "bottom": 16
+                                            }
+                                          },
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            },
+                                            "height": {
+                                              "type": "match-content"
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.hotCardLabel": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "hotCardArrow": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "right": 16
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.right_arrow": {
+                                              "type": "string",
+                                              "constantValue": "right_arrow"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "events": {
+                                  "./onClicked": {
+                                    "actions": {
+                                      "hotCardClicked": {
+                                        "action": "nextScreen",
+                                        "parameters": {
+                                          "storyboardName": "hot_card_management",
+                                          "screenName": ""
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": true,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

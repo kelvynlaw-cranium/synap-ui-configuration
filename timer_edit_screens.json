@@ -1,0 +1,1821 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "storyboards": {
+    "edit_timer_info": {
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#ffffff",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "scrollView": {
+                    "type": "scrollView",
+                    "orientation": "vertical",
+                    "style": {
+                      "size": {
+                        "width": {
+                          "type": "fill-parent"
+                        },
+                        "height": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "mainCon": {
+                        "type": "stack",
+                        "orientation": "vertical",
+                        "style": {
+                          "size": {
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          }
+                        },
+                        "views": {
+                          "timerIdDisplay": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "color": "#EDEDED",
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#B6B8B9",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 8
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#808284",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timerIdLabel": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#808284",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "chronoUnitInput": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.chronoUnitLabel": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "statusDropdown": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "dropDownCon": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  },
+                                  "border": {
+                                    "line": "solid",
+                                    "width": {
+                                      "*": 1
+                                    },
+                                    "color": "#DBDBDC",
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "labelValueCon": {
+                                    "type": "stack",
+                                    "orientation": "vertical",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "label": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#6D7172",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "top": 8,
+                                              "right": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Small",
+                                            "font": {
+                                              "*": {
+                                                "size": 12
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.statusLabel": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#494D4F",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "top": 4,
+                                              "right": 8,
+                                              "bottom": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Large/Regular",
+                                            "font": {
+                                              "*": {
+                                                "size": 14
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.valuePlaceholder": {
+                                              "type": "string",
+                                              "constantValue": "Value"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "arrow": {
+                                    "type": "image",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        },
+                                        "height": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 8,
+                                          "right": 16
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "localImagePath.right_arrow": {
+                                          "type": "string",
+                                          "constantValue": "right_arrow"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": false,
+                "style": {
+                  "color": "#FFFFFF"
+                },
+                "views": {
+                  "navTitle": {
+                    "type": "label",
+                    "style": {
+                      "color": "#000000",
+                      "alignment": {
+                        "horizontal": "center",
+                        "vertical": "middle"
+                      },
+                      "text": {
+                        "name": "Mobile/Heading/H3",
+                        "font": {
+                          "*": {
+                            "size": 16,
+                            "weight": "semiBold"
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.updateTimerInfoLabel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "edit_timer_configuration": {
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#ffffff",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "scrollView": {
+                    "type": "scrollView",
+                    "orientation": "vertical",
+                    "style": {
+                      "size": {
+                        "width": {
+                          "type": "fill-parent"
+                        },
+                        "height": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "mainCon": {
+                        "type": "stack",
+                        "orientation": "vertical",
+                        "style": {
+                          "size": {
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          }
+                        },
+                        "views": {
+                          "timer0Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer0Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timerAInput": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timerALabel": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timerKInput": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timerKLabel": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer1Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer1Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer2Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer2Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer1220Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer1220Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer3Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer3Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer4Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer4Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer5Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer5Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer6Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer6Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer7Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer7Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer8Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer8Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer9Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer9Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer10Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer10Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "timer11Input": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16,
+                                  "bottom": 40
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.timer11Label": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": false,
+                "style": {
+                  "color": "#FFFFFF"
+                },
+                "views": {
+                  "navTitle": {
+                    "type": "label",
+                    "style": {
+                      "color": "#000000",
+                      "alignment": {
+                        "horizontal": "center",
+                        "vertical": "middle"
+                      },
+                      "text": {
+                        "name": "Mobile/Heading/H3",
+                        "font": {
+                          "*": {
+                            "size": 16,
+                            "weight": "semiBold"
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.updateTimerConfigurationLabel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

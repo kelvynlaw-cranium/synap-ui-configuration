@@ -1,0 +1,611 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "components": {
+    "styles": {
+      "MobileMicroMetrics": {
+        "color": "#6D7172",
+        "alignment": {
+          "horizontal": "center"
+        },
+        "size": {
+          "height": {
+            "type": "match-content"
+          },
+          "width": {
+            "type": "fill-parent"
+          }
+        },
+        "text": {
+          "font": {
+            "*": {
+              "size": 8
+            }
+          }
+        }
+      }
+    }
+  },
+  "storyboards": {
+    "hot_card_details": {
+      "title": "Main storyboard",
+      "description": "Storyboard to present upon loaded",
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "type": "stack",
+                "orientation": "vertical",
+                "style": {
+                  "color": "#F2F4F7",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "views": {
+                  "infoScrollView": {
+                    "type": "scrollView",
+                    "style": {
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      },
+                      "color": "#F2F4F7",
+                      "border": {
+                        "line": "solid",
+                        "radius": {
+                          "topLeft": 12,
+                          "topRight": 12
+                        }
+                      },
+                      "margin": {
+                        "*": {
+                          "top": 16
+                        }
+                      }
+                    },
+                    "views": {
+                      "infoCon": {
+                        "type": "stack",
+                        "orientation": "vertical",
+                        "style": {
+                          "size": {
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          }
+                        },
+                        "views": {
+                          "panCardCon": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 46,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "text":  {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 12,
+                                      "left": 12,
+                                      "right": 12
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "localPath.pan": {
+                                      "type": "string",
+                                      "constantValue": "PAN"
+                                    }
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#1D1F20",
+                                  "margin": {
+                                    "*": {
+                                      "top": 4,
+                                      "left": 12,
+                                      "right": 12,
+                                      "bottom": 12
+                                    }
+                                  },
+                                  "text":  {
+                                    "name": "Mobile/Body/Large/Semibold",
+                                    "font": {
+                                      "*": {
+                                        "size": 14,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.value": {
+                                      "type": "string",
+                                      "constantValue": "[value]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "lastModifiedCardCon":  {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "text":  {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 12,
+                                      "left": 12,
+                                      "right": 12
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "localPath.lastModified": {
+                                      "type": "string",
+                                      "constantValue": "Last modified"
+                                    }
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#1D1F20",
+                                  "margin": {
+                                    "*": {
+                                      "top": 4,
+                                      "left": 12,
+                                      "right": 12,
+                                      "bottom": 12
+                                    }
+                                  },
+                                  "text":  {
+                                    "name": "Mobile/Body/Large/Semibold",
+                                    "font": {
+                                      "*": {
+                                        "size": 14,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.value": {
+                                      "type": "string",
+                                      "constantValue": "[value]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "responseCodeCardCon":  {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "text":  {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 12,
+                                      "left": 12,
+                                      "right": 12
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "localPath.responseCode": {
+                                      "type": "string",
+                                      "constantValue": "Response Code"
+                                    }
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#1D1F20",
+                                  "margin": {
+                                    "*": {
+                                      "top": 4,
+                                      "left": 12,
+                                      "right": 12,
+                                      "bottom": 12
+                                    }
+                                  },
+                                  "text":  {
+                                    "name": "Mobile/Body/Large/Semibold",
+                                    "font": {
+                                      "*": {
+                                        "size": 14,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.value": {
+                                      "type": "string",
+                                      "constantValue": "[value]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "statusCardCon":  {
+                            "type": "stack",
+                            "orientation": "horizontal",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "vertical": "middle"
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              }
+                            },
+                            "views": {
+                              "contentCon": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "label": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#6D7172",
+                                      "text":  {
+                                        "name": "Mobile/Body/Small",
+                                        "font": {
+                                          "*": {
+                                            "size": 12
+                                          }
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 12,
+                                          "left": 12,
+                                          "right": 12
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "localPath.status": {
+                                          "type": "string",
+                                          "constantValue": "Status"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "statusCon": {
+                                    "type": "stack",
+                                    "style": {
+                                      "color": "#EBF7F2",
+                                      "margin": {
+                                        "*": {
+                                          "top": 4,
+                                          "left": 12,
+                                          "right": 12,
+                                          "bottom": 12
+                                        }
+                                      },
+                                      "border": {
+                                        "color": "#36B37E",
+                                        "line": "solid",
+                                        "width": {
+                                          "*": 1
+                                        },
+                                        "radius": {
+                                          "topLeft": 4,
+                                          "bottomLeft": 4,
+                                          "topRight": 4,
+                                          "bottomRight": 4
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "statusLabel": {
+                                        "type": "label",
+                                        "style": {
+                                          "margin": {
+                                            "*": {
+                                              "left": 8,
+                                              "right": 8,
+                                              "top": 2,
+                                              "bottom": 2
+                                            }
+                                          },
+                                          "color": "#36B37E",
+                                          "text": {
+                                            "name": "Mobile/Body/Small/Semibold",
+                                            "font": {
+                                              "*": {
+                                                "size": 12,
+                                                "weight": "semiBold"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "status": {
+                                              "type": "string",
+                                              "constantValue": "[status]"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "rightArrow": {
+                                "type": "image",
+                                "style": {
+                                  "margin": {
+                                    "*": {
+                                      "right": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "height": {
+                                      "type": "fixed",
+                                      "value": {
+                                        "*": 20
+                                      }
+                                    },
+                                    "width": {
+                                      "type": "fixed",
+                                      "value": {
+                                        "*": 20
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "localImagePath.right_arrow": {
+                                      "type": "string",
+                                      "constantValue": "right_arrow"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "deleteBtn": {
+                            "type": "button",
+                            "style": {
+                              "color": "#FFFFFF",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20,
+                                  "bottom": 40
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 8,
+                                  "topRight": 8,
+                                  "bottomLeft": 8,
+                                  "bottomRight": 8
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center"
+                              }
+                            },
+                            "views": {
+                              "btnLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#FF5630",
+                                  "margin": {
+                                    "*": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Semibold",
+                                    "font": {
+                                      "*": {
+                                        "size": 14,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.deleteHotCard": {
+                                      "type": "string",
+                                      "constantValue": "Delete Hot Card"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": false,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

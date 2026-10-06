@@ -1,0 +1,229 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "components": {},
+  "storyboards": {
+    "updateStatus": {
+      "title": "Update Status",
+      "description": "Status Selection",
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "type": "list",
+                "style": {
+                  "color": "#FFFFFF",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "data": {
+                  "sources": {
+                    "$userDefined.statuses": {
+                      "type": "array"
+                    }
+                  }
+                },
+                "views": {
+                  "itemContainer": {
+                    "type": "stack",
+                    "style": {
+                      "size": {
+                        "height": {
+                          "type": "match-content"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "statusButton": {
+                        "type": "button",
+                        "style": {
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          }
+                        },
+                        "events": {
+                          "./onClicked": {
+                            "actions": {
+                              "selectStatus": {
+                                "action": "SaveEventContext",
+                                "parameters": {
+                                  "$event.selectedStatus": {
+                                    "type": "object",
+                                    "fromSources": {
+                                      "#ELEMENT_DATA": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "views": {
+                          "rowStack": {
+                            "type": "stack",
+                            "orientation": "horizontal",
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "match-content"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 24,
+                                  "bottom": 24
+                                }
+                              }
+                            },
+                            "views": {
+                              "statusLabel": {
+                                "type": "label",
+                                "data": {
+                                  "sources": {
+                                    "#ELEMENT_DATA.title": {
+                                      "type": "string"
+                                    }
+                                  }
+                                },
+                                "style": {
+                                  "color": "#5C5C5C",
+                                  "size": {
+                                    "height": {
+                                      "type": "match-content"
+                                    },
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "text": {
+                                    "font": {
+                                      "*": {
+                                        "size": 16,
+                                        "weight": "regular"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "checkmarkImage": {
+                                "type": "image",
+                                "data": {
+                                  "sources": {
+                                    "localImagePath.checkmark": {
+                                      "type": "string",
+                                      "constantValue": "check_green"
+                                    }
+                                  }
+                                },
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fixed",
+                                      "value": {
+                                        "*": 24
+                                      }
+                                    },
+                                    "height": {
+                                      "type": "fixed",
+                                      "value": {
+                                        "*": 24
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "divider": {
+                        "type": "divider",
+                        "style": {
+                          "color": "#D9D9D9",
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 1
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": false,
+                "views": {
+                  "navTitle": {
+                    "type": "label",
+                    "data": {
+                      "sources": {
+                        "$userDefined.navTitle": {
+                          "type": "string",
+                          "constantValue": "Update Status"
+                        }
+                      }
+                    },
+                    "style": {
+                      "color": "#1D1F20",
+                      "text": {
+                        "font": {
+                          "*": {
+                            "size": 18,
+                            "weight": "semiBold"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

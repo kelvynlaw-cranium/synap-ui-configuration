@@ -1,0 +1,2733 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "storyboards": {
+    "form_screen_components": {
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "style": {
+                  "color": "#ffffff",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "type": "stack",
+                "views": {
+                  "scrollView": {
+                    "type": "scrollView",
+                    "style": {
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "mainCon": {
+                        "type": "stack",
+                        "orientation": "vertical",
+                        "style": {
+                          "size": {
+                            "height": {
+                              "type": "fill-parent"
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          }
+                        },
+                        "views": {
+                          "titleLabel": {
+                            "type": "label",
+                            "style": {
+                              "color": "#1D1F20",
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 2
+                                }
+                              },
+                              "size": {
+                                "height": {
+                                  "type": "match-content"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Heading/H1",
+                                "font": {
+                                  "*": {
+                                    "size": 22,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "$userDefined.titlePlaceholder": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "subtitleLabel": {
+                            "type": "label",
+                            "style": {
+                              "color": "#6D7172",
+                              "margin": {
+                                "*": {
+                                  "top": 8,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "text": {
+                                "name": "Mobile/Body/Medium/Regular",
+                                "font": {
+                                  "*": {
+                                    "size": 13
+                                  }
+                                },
+                                "format": {
+                                  "algorithm": "uppercase"
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "$userDefined.subtitlePlaceholder": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_Text": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.labelPlaceholder": {
+                                      "type": "string",
+                                      "constantValue": "Label"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "textField",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_Text_Disabled": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "color": "#EDEDED",
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#B6B8B9",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#808284",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.labelPlaceholder": {
+                                      "type": "string",
+                                      "constantValue": "Label"
+                                    }
+                                  }
+                                }
+                              },
+                              "textField": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#808284",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_MultilineText": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Small",
+                                    "font": {
+                                      "*": {
+                                        "size": 12
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.labelPlaceholder": {
+                                      "type": "string",
+                                      "constantValue": "Label"
+                                    }
+                                  }
+                                }
+                              },
+                              "textView": {
+                                "type": "textView",
+                                "style": {
+                                  "color": "#494D4F",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_Toggle": {
+                            "type": "stack",
+                            "orientation": "horizontal",
+                            "style": {
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "labelCon": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "bottom": 8,
+                                      "left": 16
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "label": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#494D4F",
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.labelPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Label"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "description": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#6D7172",
+                                      "margin": {
+                                        "*": {
+                                          "top": 4
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Small",
+                                        "font": {
+                                          "*": {
+                                            "size": 12
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.descriptionPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Description"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "toggle": {
+                                "type": "toggle",
+                                "style": {
+                                  "color": "#619FCB",
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "left": 4,
+                                      "bottom": 8,
+                                      "right": 16
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 14
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_TextWithHint": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              }
+                            },
+                            "views": {
+                              "inputCon": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "border": {
+                                    "line": "solid",
+                                    "width": {
+                                      "*": 1
+                                    },
+                                    "color": "#DBDBDC",
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 20,
+                                      "right": 20,
+                                      "top": 16
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "label": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#6D7172",
+                                      "margin": {
+                                        "*": {
+                                          "top": 8,
+                                          "left": 16
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Small",
+                                        "font": {
+                                          "*": {
+                                            "size": 12
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.labelPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Label"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "textField": {
+                                    "type": "textField",
+                                    "style": {
+                                      "color": "#494D4F",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 16,
+                                          "right": 16,
+                                          "bottom": 8
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "hintLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 4,
+                                      "left": 36,
+                                      "right": 36
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "name": "Mobile/Body/Small",
+                                  "font": {
+                                    "*": {
+                                      "size": 12
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.hintPlaceholder": {
+                                      "type": "string",
+                                      "constantValue": "Hint: Numeric value, max 4 digits."
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_TextWithIcon": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              }
+                            },
+                            "views": {
+                              "inputCon": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "border": {
+                                    "line": "solid",
+                                    "width": {
+                                      "*": 1
+                                    },
+                                    "color": "#DBDBDC",
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 20,
+                                      "right": 20,
+                                      "top": 16
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "leftCon": {
+                                    "type": "stack",
+                                    "orientation": "vertical",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "label": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#6D7172",
+                                          "margin": {
+                                            "*": {
+                                              "top": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Small",
+                                            "font": {
+                                              "*": {
+                                                "size": 12
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.labelPlaceholder": {
+                                              "type": "string",
+                                              "constantValue": "Label"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "textField": {
+                                        "type": "textField",
+                                        "style": {
+                                          "color": "#494D4F",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "left": 16,
+                                              "right": 16,
+                                              "bottom": 8
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Large/Regular",
+                                            "font": {
+                                              "*": {
+                                                "size": 14
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "icon": {
+                                    "type": "image",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        },
+                                        "height": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "right": 16
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "localImagePath.info": {
+                                          "type": "string",
+                                          "constantValue": "info"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "hintLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#6D7172",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 4,
+                                      "left": 36,
+                                      "right": 36
+                                    }
+                                  }
+                                },
+                                "text": {
+                                  "name": "Mobile/Body/Small",
+                                  "font": {
+                                    "*": {
+                                      "size": 12
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.hintPlaceholder": {
+                                      "type": "string",
+                                      "constantValue": "Hint: Numeric value, max 4 digits."
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_TogglesCard": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 8,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 12,
+                                  "topRight": 12,
+                                  "bottomLeft": 12,
+                                  "bottomRight": 12
+                                }
+                              }
+                            },
+                            "views": {
+                              "toggleRow": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16
+                                    }
+                                  },
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  }
+                                },
+                                "views": {
+                                  "label": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#494D4F",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 18,
+                                          "bottom": 18
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.toggleLabelPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Institution allow positive authorization (P)"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "toggle": {
+                                    "type": "toggle",
+                                    "style": {
+                                      "color": "#619FCB"
+                                    }
+                                  }
+                                }
+                              },
+                              "divider": {
+                                "type": "divider",
+                                "style": {
+                                  "color": "#DBDBDC",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    },
+                                    "height": {
+                                      "type": "fixed",
+                                      "value": {
+                                        "*": 1
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "toggleRow2": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 16,
+                                      "right": 16
+                                    }
+                                  },
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  }
+                                },
+                                "views": {
+                                  "label": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#494D4F",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 18,
+                                          "bottom": 18
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.labelPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Receive request use crypto (0x01)"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "toggle": {
+                                    "type": "toggle",
+                                    "style": {
+                                      "color": "#619FCB"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_DropDown": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "dropDownCon": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  },
+                                  "border": {
+                                    "line": "solid",
+                                    "width": {
+                                      "*": 1
+                                    },
+                                    "color": "#DBDBDC",
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "labelValueCon": {
+                                    "type": "stack",
+                                    "orientation": "vertical",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "label": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#6D7172",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "top": 8,
+                                              "right": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Small",
+                                            "font": {
+                                              "*": {
+                                                "size": 12
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.labelPlaceholder": {
+                                              "type": "string",
+                                              "constantValue": "Label"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#494D4F",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "top": 4,
+                                              "right": 8,
+                                              "bottom": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Large/Regular",
+                                            "font": {
+                                              "*": {
+                                                "size": 14
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.valuePlaceholder": {
+                                              "type": "string",
+                                              "constantValue": "Value"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "arrow": {
+                                    "type": "image",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        },
+                                        "height": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 8,
+                                          "right": 16
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "localImagePath.right_arrow": {
+                                          "type": "string",
+                                          "constantValue": "right_arrow"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_DropDown_Disabled": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "dropDownCon": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "color": "#EDEDED",
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  },
+                                  "border": {
+                                    "line": "solid",
+                                    "width": {
+                                      "*": 1
+                                    },
+                                    "color": "#B6B8B9",
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "labelValueCon": {
+                                    "type": "stack",
+                                    "orientation": "vertical",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "label": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#6D7172",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "top": 8,
+                                              "right": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Small",
+                                            "font": {
+                                              "*": {
+                                                "size": 12
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.labelPlaceholder": {
+                                              "type": "string",
+                                              "constantValue": "Label"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "value": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#494D4F",
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "top": 4,
+                                              "right": 8,
+                                              "bottom": 8,
+                                              "left": 16
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Mobile/Body/Large/Regular",
+                                            "font": {
+                                              "*": {
+                                                "size": 14
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.valuePlaceholder": {
+                                              "type": "string",
+                                              "constantValue": "Value"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "arrow": {
+                                    "type": "image",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        },
+                                        "height": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 8,
+                                          "right": 16
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "localImagePath.right_arrow": {
+                                          "type": "string",
+                                          "constantValue": "right_arrow"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputWithBorder_DropDown_deprecated": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              }
+                            },
+                            "views": {
+                              "dropDownCon": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "alignment": {
+                                    "vertical": "middle"
+                                  },
+                                  "border": {
+                                    "line": "solid",
+                                    "width": {
+                                      "*": 1
+                                    },
+                                    "color": "#DBDBDC",
+                                    "radius": {
+                                      "topLeft": 12,
+                                      "topRight": 12,
+                                      "bottomLeft": 12,
+                                      "bottomRight": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "label": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#6D7172",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "top": 18,
+                                          "bottom": 18,
+                                          "left": 16
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.labelPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Label"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "arrow": {
+                                    "type": "image",
+                                    "style": {
+                                      "size": {
+                                        "width": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        },
+                                        "height": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 24
+                                          }
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 8,
+                                          "right": 16
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "localImagePath.right_arrow": {
+                                          "type": "string",
+                                          "constantValue": "right_arrow"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInput_RadioButtons": {
+                            "type": "radioButtons",
+                            "style": {
+                              "color": "#619FCB",
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              }
+                            },
+                            "views": {
+                              "optionRow": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "bottom": 16,
+                                      "left": 8
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "titleLabel": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#494D4F",
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "title": {
+                                          "type": "string",
+                                          "constantValue": "Title"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "descriptionLabel": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#6D7172",
+                                      "margin": {
+                                        "*": {
+                                          "top": 4
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Small",
+                                        "font": {
+                                          "*": {
+                                            "size": 12
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "description": {
+                                          "type": "string",
+                                          "constantValue": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae augue venenatis, tempor felis ac, volutpat turpis. Donec sed convallis orci. Cras varius, nulla consequat ultricies auctor, nulla ligula facilisis odio, vitae tincidunt nulla sem et quam."
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "$userDefined.radioButtonsSampleData": {
+                                  "type": "array",
+                                  "item": {
+                                    "type": "object"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInputRow_Toggle": {
+                            "type": "stack",
+                            "orientation": "horizontal",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20,
+                                  "top": 16
+                                }
+                              },
+                              "alignment": {
+                                "vertical": "middle"
+                              }
+                            },
+                            "views": {
+                              "labelCon": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "titleLabel": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#494D4F",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Large/Regular",
+                                        "font": {
+                                          "*": {
+                                            "size": 14
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.titlePlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Title"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "descriptionLabel": {
+                                    "type": "label",
+                                    "style": {
+                                      "color": "#6D7172",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "text": {
+                                        "name": "Mobile/Body/Small",
+                                        "font": {
+                                          "*": {
+                                            "size": 12
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "data": {
+                                      "sources": {
+                                        "$userDefined.descriptionPlaceholder": {
+                                          "type": "string",
+                                          "constantValue": "Description"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "toggle": {
+                                "type": "toggle",
+                                "style": {
+                                  "color": "#619FCB",
+                                  "margin": {
+                                    "*": {
+                                      "left": 8
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "formInput_StatusSelection": {
+                            "type": "list",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "$userDefined.statusSampleData": {
+                                  "type": "array",
+                                  "item": {
+                                    "type": "object"
+                                  }
+                                }
+                              }
+                            },
+                            "views": {
+                              "rowCon": {
+                                "type": "stack",
+                                "orientation": "vertical",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "left": 20,
+                                      "right": 20,
+                                      "top": 16
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "#ELEMENT_DATA": {
+                                      "type": "object"
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "contentCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        }
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "bottom": 16
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "label": {
+                                        "type": "label",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "text": {
+                                            "name": "Unknown",
+                                            "font": {
+                                              "*": {
+                                                "size": 16
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "statusName": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "tickIcon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.selectionTick": {
+                                              "type": "string",
+                                              "constantValue": "selection_tick"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "divider": {
+                                    "type": "divider",
+                                    "style": {
+                                      "color": "#DBDBDC",
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent"
+                                        },
+                                        "height": {
+                                          "type": "fixed",
+                                          "value": {
+                                            "*": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "createSteps": {
+                            "type": "stack",
+                            "orientation": "vertical",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              }
+                            },
+                            "views": {
+                              "label": {
+                                "type": "label",
+                                "style": {
+                                  "margin": {
+                                    "*": {
+                                      "top": 8
+                                    }
+                                  },
+                                  "color": "#6D7172",
+                                  "text": {
+                                    "name": "Mobile/Body/Large/Semibold",
+                                    "font": {
+                                      "*": {
+                                        "size": 14,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.stepLabelPlaceholder": {
+                                      "type": "string",
+                                      "constantValue": "Step 1of 5 — Basic Info"
+                                    }
+                                  }
+                                }
+                              },
+                              "stepsCon": {
+                                "type": "stack",
+                                "orientation": "horizontal",
+                                "style": {
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 4
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "completedStepCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent",
+                                          "ratio": 0.25
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "icon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.completed_step_ic": {
+                                              "type": "string",
+                                              "constantValue": "completed_step_ic"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "line": {
+                                        "type": "divider",
+                                        "style": {
+                                          "color": "#4E7FA2",
+                                          "size": {
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 1
+                                              }
+                                            },
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "currentStepCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 2
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent",
+                                          "ratio": 0.25
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "icon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.current_step_ic": {
+                                              "type": "string",
+                                              "constantValue": "current_step_ic"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "line": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 1
+                                              }
+                                            },
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          },
+                                          "border": {
+                                            "line": "dotted",
+                                            "color": "#619FCB",
+                                            "width": {
+                                              "*": 1
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "nextStepCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 2
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent",
+                                          "ratio": 0.25
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "icon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.next_step_ic": {
+                                              "type": "string",
+                                              "constantValue": "next_step_ic"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "line": {
+                                        "type": "divider",
+                                        "style": {
+                                          "color": "#B6B8B9",
+                                          "size": {
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 1
+                                              }
+                                            },
+                                            "width": {
+                                              "type": "fill-parent"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "finalStepCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "style": {
+                                      "alignment": {
+                                        "vertical": "middle"
+                                      },
+                                      "margin": {
+                                        "*": {
+                                          "left": 2
+                                        }
+                                      },
+                                      "size": {
+                                        "width": {
+                                          "type": "fill-parent",
+                                          "ratio": 0.25
+                                        }
+                                      }
+                                    },
+                                    "views": {
+                                      "icon": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 16
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.next_step_ic": {
+                                              "type": "string",
+                                              "constantValue": "next_step_ic"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "fullWidthBlueButton": {
+                            "type": "button",
+                            "style": {
+                              "color": "#619FCB",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 8,
+                                  "topRight": 8,
+                                  "bottomLeft": 8,
+                                  "bottomRight": 8
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center"
+                              }
+                            },
+                            "views": {
+                              "btnLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#FFFFFF",
+                                  "margin": {
+                                    "*": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  },
+                                  "text": {
+                                    "text": {
+                                      "name": "Mobile/Body/Large/Semibold",
+                                      "font": {
+                                        "*": {
+                                          "size": 14,
+                                          "weight": "semiBold"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.label": {
+                                      "type": "string",
+                                      "constantValue": "[label]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "fullWidthButtonNoBg": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 8,
+                                  "topRight": 8,
+                                  "bottomLeft": 8,
+                                  "bottomRight": 8
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center"
+                              }
+                            },
+                            "views": {
+                              "btnLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#FF5630",
+                                  "margin": {
+                                    "*": {
+                                      "top": 10,
+                                      "bottom": 10
+                                    }
+                                  },
+                                  "text": {
+                                    "text": {
+                                      "name": "Mobile/Body/Large/Semibold",
+                                      "font": {
+                                        "*": {
+                                          "size": 14,
+                                          "weight": "semiBold"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.label": {
+                                      "type": "string",
+                                      "constantValue": "[label]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "fullWidthBlueButton_popup": {
+                            "type": "button",
+                            "style": {
+                              "color": "#619FCB",
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 16,
+                                  "right": 16
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 8,
+                                  "topRight": 8,
+                                  "bottomLeft": 8,
+                                  "bottomRight": 8
+                                }
+                              }
+                            },
+                            "views": {
+                              "btnLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#FFFFFF",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "alignment": {
+                                    "horizontal": "center"
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "text": {
+                                      "name": "Mobile/Body/Large/Semibold",
+                                      "font": {
+                                        "*": {
+                                          "size": 14,
+                                          "weight": "semiBold"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.label": {
+                                      "type": "string",
+                                      "constantValue": "[label]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "fullWidthButtonNoBg_popup": {
+                            "type": "button",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 16,
+                                  "right": 16
+                                }
+                              },
+                              "border": {
+                                "radius": {
+                                  "topLeft": 8,
+                                  "topRight": 8,
+                                  "bottomLeft": 8,
+                                  "bottomRight": 8
+                                }
+                              }
+                            },
+                            "views": {
+                              "btnLabel": {
+                                "type": "label",
+                                "style": {
+                                  "color": "#FF5630",
+                                  "size": {
+                                    "width": {
+                                      "type": "fill-parent"
+                                    }
+                                  },
+                                  "alignment": {
+                                    "horizontal": "center"
+                                  },
+                                  "margin": {
+                                    "*": {
+                                      "top": 8,
+                                      "bottom": 8
+                                    }
+                                  },
+                                  "text": {
+                                    "text": {
+                                      "name": "Mobile/Body/Large/Semibold",
+                                      "font": {
+                                        "*": {
+                                          "size": 14,
+                                          "weight": "semiBold"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "local.label": {
+                                      "type": "string",
+                                      "constantValue": "[label]"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "attachRecordEmptyView": {
+                            "type": "stack",
+                            "style": {
+                              "size": {
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 48,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              },
+                              "border": {
+                                "line": "solid",
+                                "width": {
+                                  "*": 1
+                                },
+                                "color": "#DBDBDC",
+                                "radius": {
+                                  "topLeft": 16,
+                                  "topRight": 16,
+                                  "bottomLeft": 16,
+                                  "bottomRight": 16
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              }
+                            },
+                            "views": {
+                              "titleLabel": {
+                                "type": "label",
+                                "style": {
+                                  "margin": {
+                                    "*": {
+                                      "top": 42,
+                                      "left": 20,
+                                      "right": 20
+                                    }
+                                  },
+                                  "text": {
+                                    "name": "Mobile/Heading/H3",
+                                    "font": {
+                                      "*": {
+                                        "size": 16,
+                                        "weight": "semiBold"
+                                      }
+                                    }
+                                  },
+                                  "color": "#1D1F20",
+                                  "alignment": {
+                                    "horizontal": "center"
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.titlePlaceholder": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "subtitleLabel": {
+                                "type": "label",
+                                "style": {
+                                  "margin": {
+                                    "*": {
+                                      "top": 4,
+                                      "left": 20,
+                                      "right": 20
+                                    }
+                                  },
+                                  "color": "#6D7172",
+                                  "text": {
+                                    "name": "Mobile/Body/Medium/Regular",
+                                    "font": {
+                                      "*": {
+                                        "size": 13
+                                      }
+                                    }
+                                  },
+                                  "alignment": {
+                                    "horizontal": "center"
+                                  }
+                                },
+                                "data": {
+                                  "sources": {
+                                    "$userDefined.subtitlePlaceholder": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              },
+                              "addButton": {
+                                "type": "button",
+                                "style": {
+                                  "margin": {
+                                    "*": {
+                                      "top": 16,
+                                      "left": 20,
+                                      "right": 20,
+                                      "bottom": 42
+                                    }
+                                  }
+                                },
+                                "views": {
+                                  "buttonCaptionCon": {
+                                    "type": "stack",
+                                    "orientation": "horizontal",
+                                    "views": {
+                                      "iconImage": {
+                                        "type": "image",
+                                        "style": {
+                                          "size": {
+                                            "width": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            },
+                                            "height": {
+                                              "type": "fixed",
+                                              "value": {
+                                                "*": 20
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "localImagePath.add_blue":{
+                                              "type": "string",
+                                              "constantValue": "add_blue"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "captionLabel": {
+                                        "type": "label",
+                                        "style": {
+                                          "color": "#619FCB",
+                                          "text": {
+                                            "name": "Mobile/Body/Large/Semibold",
+                                            "font": {
+                                              "*": {
+                                                "size": 14,
+                                                "weight": "semiBold"
+                                              }
+                                            }
+                                          },
+                                          "margin": {
+                                            "*": {
+                                              "left": 4
+                                            }
+                                          }
+                                        },
+                                        "data": {
+                                          "sources": {
+                                            "$userDefined.labelPlaceholder": {
+                                              "type": "string"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "attachRecordList": {
+                            "type": "list",
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "margin": {
+                                "*": {
+                                  "top": 16,
+                                  "left": 20,
+                                  "right": 20
+                                }
+                              }
+                            },
+                            "views": {
+                              "type": "stack",
+                              "orientation": "vertical",
+                              "style": {
+                                "size": {
+                                  "width": {
+                                    "type": "fill-parent"
+                                  }
+                                }
+                              },
+                              "views": {
+                                "contentCon": {
+                                  "type": "stack",
+                                  "orientation": "horizontal",
+                                  "style": {
+                                    "size": {
+                                      "width": {
+                                        "type": "fill-parent"
+                                      }
+                                    },
+                                    "alignment": {
+                                      "vertical": "middle"
+                                    }
+                                  },
+                                  "views": {
+                                    "contentLabel": {
+                                      "type": "label",
+                                      "style": {
+                                        "color": "#1D1F20",
+                                        "size": {
+                                          "width": {
+                                            "type": "fill-parent"
+                                          }
+                                        },
+                                        "text": {
+                                          "name": "Mobile/Heading/H2",
+                                          "font": {
+                                            "*": {
+                                              "size": 18,
+                                              "weight": "semiBold"
+                                            }
+                                          }
+                                        },
+                                        "margin": {
+                                          "*": {
+                                            "top": 16,
+                                            "bottom": 16
+                                          }
+                                        }
+                                      },
+                                      "data": {
+                                        "sources": {
+                                          "value": {
+                                            "type": "string"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "removeButton": {
+                                      "type":"button",
+                                      "views": {
+                                        "buttonImage": {
+                                          "type": "image",
+                                          "style": {
+                                            "size": {
+                                              "width": {
+                                                "type": "fixed",
+                                                "value": {
+                                                  "*": 20
+                                                }
+                                              },
+                                              "height": {
+                                                "type": "fixed",
+                                                "value": {
+                                                  "*": 20
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "data":{
+                                            "sources": {
+                                              "localImagePath.remove_grey": {
+                                                "type": "string",
+                                                "constantValue": "remove_grey"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "divider": {
+                                  "type": "divider",
+                                  "style": {
+                                    "color": "#DBDBDC",
+                                    "size": {
+                                      "width": {
+                                        "type": "fill-parent"
+                                      },
+                                      "height": {
+                                        "type": "fixed",
+                                        "value": {
+                                          "*": 1
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "data": {
+                                "sources": {
+                                  "#ELEMENT_DATA": {
+                                    "type": "object"
+                                  }
+                                }
+                              }
+                            },
+                            "data": {
+                              "sources": {
+                                "$userDefined.transactionTypeSampleData": {
+                                  "type": "array",
+                                  "item": {
+                                    "type": "object"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "bottomBuffer": {
+                            "type": "label",
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fixed",
+                                  "value": {
+                                    "*": 60
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": false,
+                "style": {
+                  "color": "#FFFFFF"
+                },
+                "views": {
+                  "navTitle": {
+                    "type": "label",
+                    "style": {
+                      "color": "#000000",
+                      "alignment": {
+                        "horizontal": "center",
+                        "vertical": "middle"
+                      },
+                      "text": {
+                        "name": "Mobile/Heading/H3",
+                        "font": {
+                          "*": {
+                            "size": 16,
+                            "weight": "semiBold"
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.newCryptogram": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

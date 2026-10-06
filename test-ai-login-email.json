@@ -1,0 +1,335 @@
+{
+  "synapui": "1.0.0",
+  "info": {
+    "title": "Test UI Definition",
+    "version": "0.0.1",
+    "description": "Main SynapUI Definition",
+    "contact": {
+      "name": "Cranium Ventures",
+      "url": "https://www.craniumventures.com",
+      "email": "info@craniumventures.com"
+    }
+  },
+  "components": {},
+  "storyboards": {
+    "loginEmail": {
+      "title": "Login Email",
+      "description": "Email Login Screen",
+      "screens": {
+        "main": {
+          "*": {
+            "0": {
+              "view": {
+                "type": "stack",
+                "style": {
+                  "color": "#FFFFFF",
+                  "size": {
+                    "height": {
+                      "type": "fill-parent"
+                    },
+                    "width": {
+                      "type": "fill-parent"
+                    }
+                  }
+                },
+                "views": {
+                  "mainCon": {
+                    "type": "stack",
+                    "style": {
+                      "color": "#FFFFFF",
+                      "size": {
+                        "height": {
+                          "type": "fill-parent"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      }
+                    },
+                    "views": {
+                      "synapLogo": {
+                        "type": "image",
+                        "data": {
+                          "sources": {
+                            "localImagePath.synaps_logo": {
+                              "type": "string",
+                              "constantValue": "synaps_dark"
+                            }
+                          }
+                        },
+                        "style": {
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 62
+                            }
+                          },
+                          "size": {
+                            "width": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 127
+                              }
+                            },
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 30
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "welcomeBackLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#1D1F20",
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 24
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "font": {
+                              "*": {
+                                "size": 32,
+                                "weight": "bold"
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.welcomeBackLabel": {
+                              "type": "string",
+                              "constantValue": "Welcome back!"
+                            }
+                          }
+                        }
+                      },
+                      "signInMessageLabel": {
+                        "type": "label",
+                        "style": {
+                          "color": "#4A4A4A",
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "top": 12
+                            }
+                          },
+                          "size": {
+                            "height": {
+                              "type": "match-content"
+                            },
+                            "width": {
+                              "type": "match-content"
+                            }
+                          },
+                          "text": {
+                            "font": {
+                              "*": {
+                                "size": 16,
+                                "weight": "regular"
+                              }
+                            }
+                          }
+                        },
+                        "data": {
+                          "sources": {
+                            "$userDefined.signInToSystemAdminLabel": {
+                              "type": "string",
+                              "constantValue": "Sign in to System Admin"
+                            }
+                          }
+                        }
+                      },
+                      "emailField": {
+                        "type": "textField",
+                        "data": {
+                          "sources": {
+                            "$global.user.name": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "style": {
+                          "size": {
+                            "height": {
+
+                              "type": "fixed",
+
+                              "value": {
+
+                                "*": 50
+
+                              }
+
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "left": 20,
+                              "right": 20,
+                              "top": 32
+                            }
+                          },
+                          "text": {
+                            "font": {
+                              "*": {
+                                "size": 12,
+                                "weight": "regular"
+                              }
+                            }
+                          },
+                          "border": {
+                            "line": "solid",
+                            "width": {
+                              "*": 1
+                            },
+                            "color": "#DBDBDC",
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "placeholder": {
+                          "sources": {
+                            "$userDefined.emailPlaceholder": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "continueBtn": {
+                        "type": "button",
+                        "style": {
+                          "color": "#619FCB",
+                          "size": {
+                            "height": {
+                              "type": "fixed",
+                              "value": {
+                                "*": 50
+                              }
+                            },
+                            "width": {
+                              "type": "fill-parent"
+                            }
+                          },
+                          "margin": {
+                            "*": {
+                              "top": 32,
+                              "left": 20,
+                              "right": 20
+                            }
+                          },
+                          "border": {
+                            "radius": {
+                              "topLeft": 12,
+                              "topRight": 12,
+                              "bottomLeft": 12,
+                              "bottomRight": 12
+                            }
+                          }
+                        },
+                        "views": {
+                          "continueBtnLabel": {
+                            "type": "label",
+                            "data": {
+                              "sources": {
+                                "$userDefined.continueButtonTitle": {
+                                  "type": "string",
+                                  "constantValue": "Continue"
+                                }
+                              }
+                            },
+                            "style": {
+                              "size": {
+                                "height": {
+                                  "type": "fill-parent"
+                                },
+                                "width": {
+                                  "type": "fill-parent"
+                                }
+                              },
+                              "alignment": {
+                                "horizontal": "center",
+                                "vertical": "middle"
+                              },
+                              "color": "#FFFFFF",
+                              "text": {
+                                "font": {
+                                  "*": {
+                                    "size": 16,
+                                    "weight": "semiBold"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "copyrightLabel": {
+                    "type": "label",
+                    "style": {
+                      "color": "#6D7172",
+                      "alignment": {
+                        "horizontal": "center"
+                      },
+                      "size": {
+                        "height": {
+                          "type": "match-content"
+                        },
+                        "width": {
+                          "type": "fill-parent"
+                        }
+                      },
+                      "text": {
+                        "font": {
+                          "*": {
+                            "size": 8
+                          }
+                        }
+                      }
+                    },
+                    "data": {
+                      "sources": {
+                        "$userDefined.copyrightLabel": {
+                          "type": "string",
+                          "constantValue": "Copyright © 2025 Cranium Ventures. All rights reserved."
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "navigator": {
+                "type": "navigator",
+                "hidden": true,
+                "style": {
+                  "color": "#FFFFFF"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
