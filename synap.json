@@ -1,196 +1,235 @@
 {
-    "actors": {
-        "HostCommandActor": {
-            "enable": true
-        },
-        "InvalidCommandActor": {
-            "enable": true
-        }
+  "actors": {
+    "HostCommandActor": {
+      "enable": true
     },
-    "context": {
-        "organization": {
-            "name": "unity"
-        },
-        "application": {
-            "name": "unity_demo"
-        },
-        "apiKey": "session token",
-        "manageHostCommandResult": true
+    "InvalidCommandActor": {
+      "enable": true
+    }
+  },
+  "context": {
+    "organization": {
+      "name": "unity"
     },
-    "api": {
-        "definitions": {
-            "API01": {
-                "filePath": "",
-                "file": "apiDefinition.json"
-            }
-        }
+    "application": {
+      "name": "unity_demo"
     },
+    "apiKey": "session token",
+    "manageHostCommandResult": true
+  },
+  "api": {
     "definitions": {
-        "userDefinedDefinition": {
-            "filePath": "",
-            "file": "user_define_data.json"
+      "API01": {
+        "server": {
+          "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/apiDefinition.json"
         }
+      }
+    }
+  },
+  "definitions": {
+    "userDefinedDefinition": {
+      "server": {
+        "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/user_define_data.json"
+      }
     },
     "ui": {
-        "parameters": {
-            "listViewTypes": [
-                "gridView",
-                "waterfallGridView",
-                "pageView",
-                "radioButtons",
-                "checkBoxes",
-                "list"
-            ]
+      "parameters": {
+        "listViewTypes": [
+          "gridView",
+          "waterfallGridView",
+          "pageView",
+          "radioButtons",
+          "checkBoxes",
+          "list"
+        ]
+      },
+      "definitions": {
+        "main": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/login.json"
+          }
         },
-        "definitions": {
-            "main": {
-                "filePath": "",
-                "file": "login.json"
-            },
-            "main_host": {
-                "filePath": "",
-                "file": "main_host.json"
-            },
-            "institution_management": {
-                "filePath": "",
-                "file": "institution_management.json"
-            },
-            "cryptogram_management": {
-                "filePath": "",
-                "file": "cryptogram_management.json"
-            },
-            "timer_management": {
-                "filePath": "",
-                "file": "timer_management.json"
-            },
-            "bin_prefix_management": {
-                "filePath": "",
-                "file": "bin_prefix_management.json"
-            },
-            "route_management": {
-                "filePath": "",
-                "file": "route_management.json"
-            },
-            "hot_card_management": {
-                "filePath": "",
-                "file": "hot_card_management.json"
-            },
-            "table_management": {
-                "filePath": "",
-                "file": "table_management.json"
-            },
-            "configuration_file_management": {
-                "filePath": "",
-                "file": "configuration_file_management.json"
-            },
-            "institution_details": {
-                "filePath": "",
-                "file": "institution_details.json"
-            },
-            "cryptogram_details": {
-                "filePath": "",
-                "file": "cryptogram_details.json"
-            },
-            "timer_details": {
-                "filePath": "",
-                "file": "timer_details.json"
-            },
-            "bin_prefix_details": {
-                "filePath": "",
-                "file": "bin_prefix_details.json"
-            },
-            "route_management_details": {
-                "filePath": "",
-                "file": "route_management_details.json"
-            },
-            "hot_card_details": {
-                "filePath": "",
-                "file": "hot_card_details.json"
-            },
-            "table_details": {
-                "filePath": "",
-                "file": "table_details.json"
-            },
-            "configuration_file_details": {
-                "filePath": "",
-                "file": "configuration_file_details.json"
-            },
-            "institution_create_form": {
-                "filePath": "",
-                "file": "institution_create_forms.json"
-            },
-            "cryptogram_create_forms": {
-                "filePath": "",
-                "file": "cryptogram_create_forms.json"
-            },
-            "timer_create_forms": {
-                "filePath": "",
-                "file": "timer_create_forms.json"
-            },
-            "bin_prefix_create_forms": {
-                "filePath": "",
-                "file": "bin_prefix_create_forms.json"
-            },
-            "route_create_forms": {
-                "filePath": "",
-                "file": "route_create_forms.json"
-            },
-            "hot_card_create_forms": {
-                "filePath": "",
-                "file": "hot_card_create_forms.json"
-            },
-            "table_create_forms": {
-                "filePath": "",
-                "file": "table_create_forms.json"
-            },
-            "institution_edit_screens": {
-                "filePath": "",
-                "file": "institution_edit_screens.json"
-            },
-            "timer_edit_screens": {
-                "filePath": "",
-                "file": "timer_edit_screens.json"
-            },
-            "bin_prefix_edit_screens": {
-                "filePath": "",
-                "file": "bin_prefix_edit_screens.json"
-            },
-            "route_edit_screens": {
-                "filePath": "",
-                "file": "route_edit_screens.json"
-            },
-            "table_edit_screens": {
-                "filePath": "",
-                "file": "table_edit_screens.json"
-            },
-            "management_screen_components": {
-                "filePath": "",
-                "file": "management_screen_components.json"
-            },
-            "details_screen_components": {
-                "filePath": "",
-                "file": "details_screen_components.json"
-            },
-            "form_screen_components": {
-                "filePath": "",
-                "file": "form_screen_components.json"
-            },
-            "onboarding_screen_components": {
-                "filePath": "",
-                "file": "onboarding_screen_components.json"
-            },
-            "test-ai-login-email": {
-                "filePath": "",
-                "file": "test-ai-login-email.json"
-            },
-            "test-ai-update-status": {
-                "filePath": "",
-                "file": "test-ai-update-status.json"
-            },
-            "test-ai-popup": {
-                "filePath": "",
-                "file": "test-ai-popup.json"
-            }
+        "main_host": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/main_host.json"
+          }
+        },
+        "institution_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/institution_management.json"
+          }
+        },
+        "cryptogram_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/cryptogram_management.json"
+          }
+        },
+        "timer_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/timer_management.json"
+          }
+        },
+        "bin_prefix_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/bin_prefix_management.json"
+          }
+        },
+        "route_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/route_management.json"
+          }
+        },
+        "hot_card_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/hot_card_management.json"
+          }
+        },
+        "table_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/table_management.json"
+          }
+        },
+        "configuration_file_management": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/configuration_file_management.json"
+          }
+        },
+        "institution_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/institution_details.json"
+          }
+        },
+        "cryptogram_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/cryptogram_details.json"
+          }
+        },
+        "timer_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/timer_details.json"
+          }
+        },
+        "bin_prefix_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/bin_prefix_details.json"
+          }
+        },
+        "route_management_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/route_management_details.json"
+          }
+        },
+        "hot_card_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/hot_card_details.json"
+          }
+        },
+        "table_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/table_details.json"
+          }
+        },
+        "configuration_file_details": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/configuration_file_details.json"
+          }
+        },
+        "institution_create_form": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/institution_create_forms.json"
+          }
+        },
+        "cryptogram_create_forms": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/cryptogram_create_forms.json"
+          }
+        },
+        "timer_create_forms": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/timer_create_forms.json"
+          }
+        },
+        "bin_prefix_create_forms": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/bin_prefix_create_forms.json"
+          }
+        },
+        "route_create_forms": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/route_create_forms.json"
+          }
+        },
+        "hot_card_create_forms": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/hot_card_create_forms.json"
+          }
+        },
+        "table_create_forms": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/table_create_forms.json"
+          }
+        },
+        "institution_edit_screens": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/institution_edit_screens.json"
+          }
+        },
+        "timer_edit_screens": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/timer_edit_screens.json"
+          }
+        },
+        "bin_prefix_edit_screens": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/bin_prefix_edit_screens.json"
+          }
+        },
+        "route_edit_screens": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/route_edit_screens.json"
+          }
+        },
+        "table_edit_screens": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/table_edit_screens.json"
+          }
+        },
+        "management_screen_components": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/management_screen_components.json"
+          }
+        },
+        "details_screen_components": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/details_screen_components.json"
+          }
+        },
+        "form_screen_components": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/form_screen_components.json"
+          }
+        },
+        "onboarding_screen_components": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/onboarding_screen_components.json"
+          }
+        },
+        "test-ai-login-email": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/test-ai-login-email.json"
+          }
+        },
+        "test-ai-update-status": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/test-ai-update-status.json"
+          }
+        },
+        "test-ai-popup": {
+          "server": {
+            "url": "https://raw.githubusercontent.com/kelvynlaw-cranium/synap-ui-configuration/refs/heads/main/test-ai-popup.json"
+          }
         }
+      }
     }
+  }
 }

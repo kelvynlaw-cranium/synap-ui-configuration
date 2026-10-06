@@ -394,11 +394,80 @@
                                     "events": {
                                       "./onClicked": {
                                         "actions": {
-                                          "institutionSettingsClicked": {
+                                          "getInstitutions": {
+                                            "action": "APICommand",
+                                            "parameters": {
+                                              "command": "GetInstitutions",
+                                              "saveResult": {
+                                                "$api.institutions": {
+                                                  "toSources": {
+                                                    "$global.institutionData": {
+                                                      "type": "array"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "conditionDataSource": "$api.result_code",
+                                              "conditions": {
+                                                "^success$": {
+                                                  "dispatchEvents": {
+                                                    "hideLoading": {
+                                                      "action": "HideLoading"
+                                                    },
+                                                    "openInstitutionsManagementScreen": {}
+                                                  }
+                                                },
+                                                "^[^success].*$": {
+                                                  "dispatchEvents": {
+                                                    "hideLoading": {
+                                                      "action": "HideLoading"
+                                                    },
+                                                    "showError": {
+                                                      "$event.result": {
+                                                        "type": "object",
+                                                        "fromSources": {
+                                                          "$api.result": {}
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "openInstitutionsManagementScreen": {
+                                        "actions": {
+                                          "openInstitutionsManagementScreen": {
                                             "action": "nextScreen",
                                             "parameters": {
                                               "storyboardName": "institution_management",
                                               "screenName": ""
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "showError": {
+                                        "actions": {
+                                          "hideLoading": {
+                                            "action": "HideLoading"
+                                          },
+                                          "showErrorAlert": {
+                                            "action": "alert",
+                                            "parameters": {
+                                              "title": "$event.result.code",
+                                              "message": "$event.result.reason",
+                                              "buttons": [
+                                                {
+                                                  "title": "Ok",
+                                                  "onClickEvent": ""
+                                                },
+                                                {
+                                                  "title": "Cancel",
+                                                  "onClickEvent": ""
+                                                }
+                                              ]
                                             }
                                           }
                                         }
@@ -520,7 +589,6 @@
                                       }
                                     }
                                   },
-
                                   "cryptogramManagementDivider": {
                                     "type": "divider",
                                     "style": {
@@ -533,7 +601,6 @@
                                       }
                                     }
                                   },
-
                                   "timerManagementButton": {
                                     "type": "button",
                                     "style": {
@@ -637,7 +704,6 @@
                                       }
                                     }
                                   },
-
                                   "timerManagementDivider": {
                                     "type": "divider",
                                     "style": {
@@ -650,7 +716,6 @@
                                       }
                                     }
                                   },
-
                                   "binPrefixManagementButton": {
                                     "type": "button",
                                     "style": {
@@ -754,7 +819,6 @@
                                       }
                                     }
                                   },
-
                                   "binPrefixManagementDivider": {
                                     "type": "divider",
                                     "style": {
@@ -767,7 +831,6 @@
                                       }
                                     }
                                   },
-
                                   "routeManagementButton": {
                                     "type": "button",
                                     "style": {
