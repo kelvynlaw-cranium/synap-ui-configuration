@@ -74,7 +74,7 @@
                       "institutionManagementLabel": {
                         "type": "label",
                         "style": {
-                          "color": "#ff0000",
+                          "color": "#1D1F20",
                           "alignment": {
                             "horizontal": "center"
                           },
